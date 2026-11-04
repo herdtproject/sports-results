@@ -1,4 +1,4 @@
-# Spoiler-Free Scores
+# Scoreless Results
 
 Shows win/loss results for a few favorite teams — never the score.
 
