@@ -25,16 +25,8 @@
     padding: max(16px, env(safe-area-inset-top)) 16px max(24px, env(safe-area-inset-bottom));
   }
   main { max-width: 560px; margin: 0 auto; }
-  .top { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
   h1 { font-size: 1.25rem; margin: 4px 0 2px; }
   .sub { color: var(--muted); font-size: .85rem; margin: 0 0 16px; }
-  #refresh {
-    flex: none; font: inherit; font-size: .85rem; font-weight: 600; color: var(--text);
-    background: var(--card); border: 1px solid var(--line); border-radius: 10px;
-    padding: 8px 12px; min-height: 40px; cursor: pointer; -webkit-tap-highlight-color: transparent;
-  }
-  #refresh:focus-visible { outline: 2px solid var(--live); outline-offset: 2px; }
-  #refresh:disabled { opacity: .6; cursor: default; }
   .team { background: var(--card); border: 1px solid var(--line); border-radius: 14px; margin-bottom: 12px; overflow: hidden; }
   .head {
     all: unset; box-sizing: border-box; display: flex; align-items: center; gap: 14px;
@@ -66,10 +58,7 @@
 </head>
 <body>
 <main>
-  <div class="top">
-    <h1>Spoiler-Free Scores</h1>
-    <button id="refresh" type="button">↻ Refresh</button>
-  </div>
+  <h1>Spoiler-Free Scores</h1>
   <p class="sub">Tap a team to reveal results. No scores, ever.</p>
   <div id="teams"><p class="none">Loading…</p></div>
   <footer id="updated"></footer>
@@ -133,36 +122,29 @@
       if (open) openTeams[t.name] = true; else delete openTeams[t.name];
     }
     h.addEventListener("click", function () { setOpen(!c.classList.contains("open")); });
-    if (openTeams[t.name]) setOpen(true);  // keep a card open across refreshes
+    if (openTeams[t.name]) setOpen(true);
     c.appendChild(h); c.appendChild(b);
     return c;
   }
 
-  var btn = document.getElementById("refresh");
   var footer = document.getElementById("updated");
   var openTeams = {};
-  var loaded = false;
 
   function load() {
-    btn.disabled = true; btn.textContent = "Refreshing…";
     return fetch("results.json?t=" + Date.now(), { cache: "no-store" })
       .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
       .then(function (data) {
         root.textContent = "";
         data.teams.forEach(function (t, i) { root.appendChild(card(t, i)); });
-        loaded = true;
         footer.textContent = data.updated
           ? "Results last changed " + new Date(data.updated).toLocaleString(undefined, fmtTime)
           : "";
       })
       .catch(function () {
-        if (loaded) { footer.textContent = "Couldn't refresh — showing the previous results."; return; }
         root.textContent = "";
         root.appendChild(el("p", "none err", "Couldn't load results. Try again in a moment."));
-      })
-      .then(function () { btn.disabled = false; btn.textContent = "↻ Refresh"; });
+      });
   }
-  btn.addEventListener("click", load);
   load();
 })();
 </script>
