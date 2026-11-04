@@ -558,6 +558,20 @@
      "status": "div",
      "rank": 2
     },
+    "10": {
+     "id": "10",
+     "name": "Canadiens",
+     "abbr": "MTL",
+     "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/mtl.png",
+     "record": "9-3-3",
+     "main": "21",
+     "mainLabel": "PTS",
+     "streak": "L1",
+     "seed": 3,
+     "mine": false,
+     "status": "div",
+     "rank": 3
+    },
     "20": {
      "id": "20",
      "name": "Lightning",
@@ -567,20 +581,6 @@
      "main": "20",
      "mainLabel": "PTS",
      "streak": "W1",
-     "seed": 3,
-     "mine": false,
-     "status": "div",
-     "rank": 3
-    },
-    "10": {
-     "id": "10",
-     "name": "Canadiens",
-     "abbr": "MTL",
-     "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/mtl.png",
-     "record": "9-3-2",
-     "main": "20",
-     "mainLabel": "PTS",
-     "streak": "W5",
      "seed": 4,
      "mine": false,
      "status": "div",
@@ -595,10 +595,10 @@
      "main": "19",
      "mainLabel": "PTS",
      "streak": "L1",
-     "seed": 5,
+     "seed": 6,
      "mine": false,
      "status": "wc",
-     "rank": 5
+     "rank": 6
     },
     "26": {
      "id": "26",
@@ -661,10 +661,10 @@
      "name": "Hurricanes",
      "abbr": "CAR",
      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/car.png",
-     "record": "12-2-2",
+     "record": "12-3-2",
      "main": "26",
      "mainLabel": "PTS",
-     "streak": "W4",
+     "streak": "L1",
      "seed": 1,
      "mine": false,
      "status": "div",
@@ -675,14 +675,14 @@
      "name": "Devils",
      "abbr": "NJ",
      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/nj.png",
-     "record": "9-5-0",
-     "main": "18",
+     "record": "10-5-0",
+     "main": "20",
      "mainLabel": "PTS",
-     "streak": "W1",
-     "seed": 6,
+     "streak": "W2",
+     "seed": 5,
      "mine": false,
      "status": "div",
-     "rank": 6
+     "rank": 5
     },
     "13": {
      "id": "13",
@@ -777,10 +777,10 @@
      "main": "25",
      "mainLabel": "PTS",
      "streak": "W2",
-     "seed": 1,
+     "seed": 2,
      "mine": false,
      "status": "div",
-     "rank": 1
+     "rank": 2
     },
     "129764": {
      "id": "129764",
@@ -829,10 +829,10 @@
      "name": "Predators",
      "abbr": "NSH",
      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/nsh.png",
-     "record": "5-4-5",
-     "main": "15",
+     "record": "6-4-5",
+     "main": "17",
      "mainLabel": "PTS",
-     "streak": "W1",
+     "streak": "W2",
      "seed": 8,
      "mine": false,
      "status": "wc",
@@ -857,10 +857,10 @@
      "name": "Jets",
      "abbr": "WPG",
      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/wpg.png",
-     "record": "4-8-3",
-     "main": "11",
+     "record": "5-8-3",
+     "main": "13",
      "mainLabel": "PTS",
-     "streak": "L9",
+     "streak": "W1",
      "seed": 13,
      "mine": false,
      "status": "out",
@@ -885,14 +885,14 @@
      "name": "Oilers",
      "abbr": "EDM",
      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/edm.png",
-     "record": "11-2-2",
-     "main": "24",
+     "record": "11-2-3",
+     "main": "25",
      "mainLabel": "PTS",
-     "streak": "W3",
-     "seed": 2,
+     "streak": "L1",
+     "seed": 1,
      "mine": false,
      "status": "div",
-     "rank": 2
+     "rank": 1
     },
     "37": {
      "id": "37",
@@ -922,6 +922,20 @@
      "status": "div",
      "rank": 7
     },
+    "25": {
+     "id": "25",
+     "name": "Ducks",
+     "abbr": "ANA",
+     "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/ana.png",
+     "record": "7-7-1",
+     "main": "15",
+     "mainLabel": "PTS",
+     "streak": "W2",
+     "seed": 10,
+     "mine": false,
+     "status": "out",
+     "rank": 10
+    },
     "18": {
      "id": "18",
      "name": "Sharks",
@@ -931,10 +945,10 @@
      "main": "15",
      "mainLabel": "PTS",
      "streak": "L2",
-     "seed": 10,
+     "seed": 11,
      "mine": false,
      "status": "out",
-     "rank": 10
+     "rank": 11
     },
     "3": {
      "id": "3",
@@ -943,20 +957,6 @@
      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/cgy.png",
      "record": "7-8-0",
      "main": "14",
-     "mainLabel": "PTS",
-     "streak": "W1",
-     "seed": 11,
-     "mine": false,
-     "status": "out",
-     "rank": 11
-    },
-    "25": {
-     "id": "25",
-     "name": "Ducks",
-     "abbr": "ANA",
-     "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/ana.png",
-     "record": "6-7-1",
-     "main": "13",
      "mainLabel": "PTS",
      "streak": "W1",
      "seed": 12,
@@ -983,10 +983,10 @@
      "name": "Canucks",
      "abbr": "VAN",
      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/van.png",
-     "record": "3-12-1",
+     "record": "3-13-1",
      "main": "7",
      "mainLabel": "PTS",
-     "streak": "L2",
+     "streak": "L3",
      "seed": 16,
      "mine": false,
      "status": "out",
@@ -1001,8 +1001,8 @@
        "name": "Atlantic Division",
        "ids": [
         "1",
-        "20",
         "10",
+        "20",
         "14",
         "26",
         "21",
@@ -1027,10 +1027,10 @@
      "order": [
       "7",
       "1",
-      "20",
       "10",
-      "14",
+      "20",
       "11",
+      "14",
       "26",
       "13",
       "21",
@@ -1068,17 +1068,17 @@
         "6",
         "37",
         "124292",
+        "25",
         "18",
         "3",
-        "25",
         "8",
         "22"
        ]
       }
      ],
      "order": [
-      "30",
       "6",
+      "30",
       "37",
       "129764",
       "9",
@@ -1086,9 +1086,9 @@
       "124292",
       "27",
       "19",
+      "25",
       "18",
       "3",
-      "25",
       "28",
       "8",
       "4",
@@ -1681,5 +1681,5 @@
    ]
   }
  ],
- "updated": "2026-11-04T03:09Z"
+ "updated": "2026-11-04T07:22Z"
 }
