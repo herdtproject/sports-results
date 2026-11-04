@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>Teams · Scoreless Results</title>
+<meta name="description" content="Choose which teams show on your Scoreless Results page.">
+<meta name="theme-color" content="#0f172a">
+<meta name="apple-mobile-web-app-title" content="Scoreless">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<style>
+  :root {
+    --bg: #f4f5f7; --card: #fff; --text: #14161a; --muted: #6b7280; --line: #e5e7eb;
+    --live: #2563eb; --chip: #eef0f3; --btn-bg: #2563eb; --btn-text: #ffffff; --danger: #b91c1c;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e1013; --card: #181b20; --text: #f1f2f4; --muted: #9aa1ac; --line: #2a2f37;
+      --live: #60a5fa; --chip: #232830; --btn-bg: #60a5fa; --btn-text: #0b1220; --danger: #f87171;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.4 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    padding: max(16px, env(safe-area-inset-top)) 16px max(24px, env(safe-area-inset-bottom));
+  }
+  main { max-width: 560px; margin: 0 auto; }
+  h1 { font-size: 1.25rem; margin: 4px 0 12px; }
+  .nav { margin: 0 0 14px; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 20px;
+    background: var(--btn-bg); color: var(--btn-text); border: 0; border-radius: 12px;
+    font: inherit; font-size: .95rem; font-weight: 700; text-decoration: none; cursor: pointer;
+    box-shadow: 0 1px 2px rgba(0,0,0,.25); -webkit-tap-highlight-color: transparent;
+  }
+  .btn.secondary { background: var(--card); color: var(--text); border: 1px solid var(--line); box-shadow: none; }
+  .btn:active { filter: brightness(.92); transform: translateY(1px); }
+  .btn:focus-visible { outline: 2px solid var(--text); outline-offset: 2px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 4px 14px 14px; margin-bottom: 14px; }
+  h2 { font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 14px 0 6px; }
+  .item { display: flex; align-items: center; gap: 12px; min-height: 52px; padding: 4px 0; }
+  .item + .item { border-top: 1px solid var(--line); }
+  .item img { width: 30px; height: 30px; object-fit: contain; flex: none; }
+  .nm { flex: 1; min-width: 0; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .nm2 { flex: 1; min-width: 0; }
+  .nm2 .nm { white-space: normal; overflow: visible; line-height: 1.25; }
+  .lg2 { font-size: .75rem; color: var(--muted); }
+  .ib {
+    all: unset; box-sizing: border-box; flex: none; width: 40px; height: 44px; text-align: center; line-height: 44px;
+    border-radius: 10px; cursor: pointer; color: var(--muted); font-size: 1.05rem; -webkit-tap-highlight-color: transparent;
+  }
+  .ib:hover { background: var(--chip); } .ib:focus-visible { outline: 2px solid var(--live); outline-offset: -2px; }
+  .ib[disabled] { opacity: .3; cursor: default; }
+  .ib.rm:hover { color: var(--danger); }
+  .none { color: var(--muted); font-size: .9rem; padding: 10px 0; }
+  .seg { display: flex; gap: 4px; margin: 12px 0 10px; background: var(--chip); border-radius: 10px; padding: 3px; }
+  .seg button {
+    all: unset; box-sizing: border-box; flex: 1; text-align: center; font-size: .82rem; font-weight: 600;
+    color: var(--muted); padding: 8px 2px; border-radius: 8px; cursor: pointer; min-height: 38px;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .seg button[aria-pressed="true"] { background: var(--card); color: var(--text); box-shadow: 0 1px 2px rgba(0,0,0,.2); }
+  .seg button:focus-visible { outline: 2px solid var(--live); outline-offset: 1px; }
+  .search {
+    width: 100%; font: inherit; font-size: 1rem; color: var(--text); background: var(--bg);
+    border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; min-height: 44px; margin-bottom: 4px;
+  }
+  .search:focus-visible { outline: 2px solid var(--live); outline-offset: 1px; }
+  label.pick { display: flex; align-items: center; gap: 12px; min-height: 52px; padding: 4px 0; cursor: pointer; }
+  label.pick + label.pick { border-top: 1px solid var(--line); }
+  label.pick[hidden] { display: none; }
+  label.pick img { width: 30px; height: 30px; object-fit: contain; flex: none; }
+  label.pick input { width: 22px; height: 22px; accent-color: var(--live); flex: none; margin: 0; }
+  .note { color: var(--muted); font-size: .8rem; margin: 10px 2px 0; }
+  .warn { color: var(--danger); font-size: .85rem; margin: 8px 2px; }
+  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Teams</h1>
+  <nav class="nav"><a class="btn" href="./">← Back to scores</a></nav>
+
+  <section class="card" aria-labelledby="mine-h">
+    <h2 id="mine-h">Showing on your main page</h2>
+    <div id="mine"><p class="none">Loading…</p></div>
+  </section>
+
+  <section class="card" aria-labelledby="add-h">
+    <h2 id="add-h">Add or remove teams</h2>
+    <div class="seg" id="leagues" role="group" aria-label="League"></div>
+    <input class="search" id="search" type="search" placeholder="Search teams" aria-label="Search teams" autocomplete="off">
+    <div id="picker"></div>
+  </section>
+
+  <p class="warn" id="warn" hidden>Couldn't save on this browser, so your choices won't stick. Private browsing can cause this.</p>
+  <button class="btn secondary" id="reset" type="button">Reset to default teams</button>
+  <p class="note">Your choices are saved on this device and browser only.</p>
+  <div class="sr" id="live" aria-live="polite"></div>
+</main>
+<script>
+(function () {
+  var KEY = "sr.teams.v1";
+  var DEFAULTS = [{ l: "NBA", id: "26" }, { l: "NFL", id: "2" }, { l: "NHL", id: "129764" }, { l: "NCAAF", id: "252" }];
+  var LEAGUES = [["NBA", "NBA"], ["NFL", "NFL"], ["NHL", "NHL"], ["NCAAF", "College"]];
+  var LEAGUE_NAMES = { NBA: "NBA", NFL: "NFL", NHL: "NHL", NCAAF: "College football" };
+  var data = {}, sel = read(), current = "NBA";
+  var mine = document.getElementById("mine"), picker = document.getElementById("picker");
+  var search = document.getElementById("search"), say = document.getElementById("live");
+  var checks = {};  // "LEAGUE:id" -> checkbox, so removals can untick it
+
+  function read() {
+    try {
+      var s = JSON.parse(localStorage.getItem(KEY));
+      if (Array.isArray(s)) return s.filter(function (x) { return x && x.l && x.id; });
+    } catch (e) {}
+    return DEFAULTS.slice();
+  }
+  function save() {
+    try { localStorage.setItem(KEY, JSON.stringify(sel)); document.getElementById("warn").hidden = true; }
+    catch (e) { document.getElementById("warn").hidden = false; }
+  }
+  function el(tag, cls, text) {
+    var e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text != null) e.textContent = text;
+    return e;
+  }
+  function img(src) {
+    var i = document.createElement("img");
+    i.alt = ""; i.loading = "lazy"; i.referrerPolicy = "no-referrer";
+    if (src) i.src = src;
+    return i;
+  }
+  function key(x) { return x.l + ":" + x.id; }
+  function has(l, id) { return sel.some(function (x) { return x.l === l && x.id === id; }); }
+  function info(x) { return data[x.l] && data[x.l].teams[x.id]; }
+
+  function iconBtn(label, text, fn, cls, disabled) {
+    var b = el("button", "ib" + (cls ? " " + cls : ""), text);
+    b.type = "button"; b.setAttribute("aria-label", label); b.disabled = !!disabled;
+    b.addEventListener("click", fn);
+    return b;
+  }
+  function move(i, d) {
+    var j = i + d;
+    if (j < 0 || j >= sel.length) return;
+    var t = sel[i]; sel[i] = sel[j]; sel[j] = t;
+    save(); renderMine();
+    say.textContent = (info(t) || {}).n + " moved to position " + (j + 1);
+  }
+  function remove(i) {
+    var x = sel.splice(i, 1)[0];
+    save(); renderMine(); sync();
+    say.textContent = ((info(x) || {}).n || "Team") + " removed";
+  }
+  function renderMine() {
+    mine.textContent = "";
+    if (!sel.length) { mine.appendChild(el("p", "none", "No teams selected. Pick some below.")); return; }
+    sel.forEach(function (x, i) {
+      var t = info(x) || { n: x.id, l: null };
+      var row = el("div", "item");
+      row.appendChild(img(t.l));
+      var box = el("div", "nm2");
+      box.appendChild(el("div", "nm", t.n));
+      box.appendChild(el("div", "lg2", LEAGUE_NAMES[x.l] || x.l));
+      row.appendChild(box);
+      row.appendChild(iconBtn("Move " + t.n + " up", "▲", function () { move(i, -1); }, "", i === 0));
+      row.appendChild(iconBtn("Move " + t.n + " down", "▼", function () { move(i, 1); }, "", i === sel.length - 1));
+      row.appendChild(iconBtn("Remove " + t.n, "✕", function () { remove(i); }, "rm"));
+      mine.appendChild(row);
+    });
+  }
+  function sync() {
+    Object.keys(checks).forEach(function (k) {
+      var p = k.split(":");
+      checks[k].checked = has(p[0], p[1]);
+    });
+  }
+  function renderPicker() {
+    picker.textContent = "";
+    var L = data[current];
+    if (!L) { picker.appendChild(el("p", "none", "Couldn't load this league.")); return; }
+    L.pick.forEach(function (id) {
+      var t = L.teams[id];
+      var lab = el("label", "pick");
+      lab.dataset.name = t.n.toLowerCase();
+      var cb = document.createElement("input");
+      cb.type = "checkbox"; cb.checked = has(current, id);
+      cb.addEventListener("change", function () {
+        if (cb.checked) { if (!has(current, id)) sel.push({ l: current, id: id }); }
+        else sel = sel.filter(function (x) { return !(x.l === current && x.id === id); });
+        save(); renderMine();
+        say.textContent = t.n + (cb.checked ? " added" : " removed");
+      });
+      checks[current + ":" + id] = cb;
+      lab.appendChild(cb); lab.appendChild(img(t.l)); lab.appendChild(el("span", "nm", t.n));
+      picker.appendChild(lab);
+    });
+    filter();
+  }
+  function filter() {
+    var q = search.value.trim().toLowerCase();
+    Array.prototype.forEach.call(picker.querySelectorAll("label.pick"), function (l) {
+      l.hidden = q && l.dataset.name.indexOf(q) === -1;
+    });
+  }
+  function renderTabs() {
+    var wrap = document.getElementById("leagues");
+    wrap.textContent = "";
+    LEAGUES.forEach(function (lg) {
+      var b = el("button", null, lg[1]); b.type = "button";
+      b.setAttribute("aria-pressed", lg[0] === current);
+      b.addEventListener("click", function () { current = lg[0]; search.value = ""; checks = {}; renderTabs(); renderPicker(); });
+      wrap.appendChild(b);
+    });
+  }
+  search.addEventListener("input", filter);
+  document.getElementById("reset").addEventListener("click", function () {
+    sel = DEFAULTS.slice(); save(); renderMine(); sync();
+    say.textContent = "Reset to default teams";
+  });
+
+  renderTabs();
+  Promise.all(LEAGUES.map(function (lg) {
+    return fetch("data/" + lg[0].toLowerCase() + ".json?t=" + Date.now(), { cache: "no-store" })
+      .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(function (L) { data[lg[0]] = L; })
+      .catch(function () {});
+  })).then(function () { renderMine(); renderPicker(); });
+})();
+</script>
+</body>
+</html>

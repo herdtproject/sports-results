@@ -50,16 +50,7 @@ def logo(team):
     return team["logos"][0]["href"] if team.get("logos") else None
 
 
-def my_teams():
-    """Teams from results.json, so the standings can highlight them."""
-    try:
-        data = json.loads((ROOT / "results.json").read_text())
-        return {(t["league"], str(t["id"])) for t in data["teams"]}
-    except Exception:
-        return set()
-
-
-def team_row(league, e, mine):
+def team_row(league, e):
     t = e["team"]
     w, l = to_int(stat(e, "wins")), to_int(stat(e, "losses"))
     if league == "NHL":
@@ -81,7 +72,6 @@ def team_row(league, e, mine):
         "mainLabel": main_label,
         "streak": stat(e, "streak", ""),
         "seed": to_int(stat(e, "playoffSeed"), 99),
-        "mine": (league, str(t["id"])) in mine,
     }
 
 
@@ -89,7 +79,7 @@ def by_seed(ids, teams):
     return sorted(ids, key=lambda i: teams[i]["seed"])
 
 
-def build_league(key, path, mine):
+def build_league(key, path):
     data = get(URL.format(path=path))
     teams, confs = {}, []
     for conf in data["children"]:
@@ -97,7 +87,7 @@ def build_league(key, path, mine):
         for div in conf.get("children") or []:
             ids = []
             for e in div["standings"]["entries"]:
-                row = team_row(key, e, mine)
+                row = team_row(key, e)
                 teams[row["id"]] = row
                 ids.append(row["id"])
             divisions.append({"name": div["name"].replace(conf["abbreviation"] + " ", ""), "ids": by_seed(ids, teams)})
@@ -135,12 +125,11 @@ def build_league(key, path, mine):
 
 
 def main():
-    mine = my_teams()
     leagues = []
     for key, path in LEAGUES:
         print(f"{key}…", file=sys.stderr)
         try:
-            leagues.append(build_league(key, path, mine))
+            leagues.append(build_league(key, path))
         except Exception as exc:
             print(f"ERROR for {key}: {exc}", file=sys.stderr)
             return 1  # keep the previous file rather than publish a partial one
