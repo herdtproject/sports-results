@@ -22,12 +22,14 @@ jobs:
           python-version: "3.12"
       - name: Fetch results (scores are discarded)
         run: python scripts/update_results.py
+      - name: Fetch standings
+        run: python scripts/update_standings.py
       - name: Commit if changed
         run: |
-          if [ -n "$(git status --porcelain results.json)" ]; then
+          if [ -n "$(git status --porcelain results.json standings.json)" ]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add results.json
+            git add results.json standings.json
             git commit -m "Update results"
             git push
           fi

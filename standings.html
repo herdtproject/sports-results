@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>Standings · Scoreless Results</title>
+<meta name="description" content="NBA, NHL and NFL standings and playoff picture. Hidden until you tap.">
+<meta name="theme-color" content="#0f172a">
+<meta name="apple-mobile-web-app-title" content="Scoreless">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<style>
+  :root {
+    --bg: #f4f5f7; --card: #fff; --text: #14161a; --muted: #6b7280; --line: #e5e7eb;
+    --in: #15803d; --playin: #b45309; --mine-bg: #eaf1ff; --live: #2563eb; --chip: #eef0f3;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e1013; --card: #181b20; --text: #f1f2f4; --muted: #9aa1ac; --line: #2a2f37;
+      --in: #4ade80; --playin: #fbbf24; --mine-bg: #1b2640; --live: #60a5fa; --chip: #232830;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.4 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    padding: max(16px, env(safe-area-inset-top)) 16px max(24px, env(safe-area-inset-bottom));
+  }
+  main { max-width: 560px; margin: 0 auto; }
+  h1 { font-size: 1.25rem; margin: 4px 0 2px; }
+  .sub { color: var(--muted); font-size: .85rem; margin: 0 0 12px; }
+  .nav { margin: 0 0 14px; }
+  .nav a { color: var(--live); font-size: .9rem; font-weight: 600; text-decoration: none; padding: 6px 0; display: inline-block; }
+  .nav a:hover { text-decoration: underline; }
+  .nav a:focus-visible { outline: 2px solid var(--live); outline-offset: 2px; border-radius: 4px; }
+  .league { background: var(--card); border: 1px solid var(--line); border-radius: 14px; margin-bottom: 12px; overflow: hidden; }
+  .head {
+    all: unset; box-sizing: border-box; display: flex; align-items: center; gap: 14px;
+    width: 100%; padding: 16px; cursor: pointer; -webkit-tap-highlight-color: transparent;
+  }
+  .head:focus-visible { outline: 2px solid var(--live); outline-offset: -2px; }
+  .lname { font-weight: 700; font-size: 1.1rem; }
+  .hint { color: var(--muted); font-size: .8rem; }
+  .chev { margin-left: auto; color: var(--muted); transition: transform .2s; flex: none; }
+  .league.open .chev { transform: rotate(180deg); }
+  .body { display: none; padding: 0 12px 14px; border-top: 1px solid var(--line); }
+  .league.open .body { display: block; }
+  .seg { display: flex; gap: 6px; margin: 12px 0 4px; background: var(--chip); border-radius: 10px; padding: 3px; }
+  .seg button {
+    all: unset; box-sizing: border-box; flex: 1; text-align: center; font-size: .85rem; font-weight: 600;
+    color: var(--muted); padding: 8px 6px; border-radius: 8px; cursor: pointer; min-height: 36px;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .seg button[aria-pressed="true"] { background: var(--card); color: var(--text); box-shadow: 0 1px 2px rgba(0,0,0,.2); }
+  .seg button:focus-visible { outline: 2px solid var(--live); outline-offset: 1px; }
+  h2 { font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 16px 4px 4px; }
+  .row, .cols {
+    display: grid; align-items: center; column-gap: 6px;
+    grid-template-columns: 20px 24px minmax(0, 1fr) 58px 36px 30px;
+    padding: 7px 4px;
+  }
+  .cols { color: var(--muted); font-size: .68rem; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; padding-bottom: 2px; }
+  .row { border-top: 1px solid var(--line); border-left: 3px solid transparent; font-size: .9rem; }
+  .row.in { border-left-color: var(--in); } .row.playin { border-left-color: var(--playin); }
+  .row.mine { background: var(--mine-bg); font-weight: 650; }
+  .rk { color: var(--muted); font-size: .8rem; text-align: center; }
+  .row img { width: 24px; height: 24px; object-fit: contain; }
+  .nm { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .tag { font-size: .62rem; font-weight: 700; letter-spacing: .03em; padding: 1px 5px; border-radius: 5px; margin-left: 6px; background: var(--chip); color: var(--muted); vertical-align: 1px; }
+  .rec, .main, .stk, .cols .c { text-align: right; font-variant-numeric: tabular-nums; }
+  .stk { color: var(--muted); font-size: .8rem; }
+  .cut { display: flex; align-items: center; gap: 8px; color: var(--muted); font-size: .68rem; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; padding: 3px 0; }
+  .cut::before, .cut::after { content: ""; flex: 1; border-top: 1px dashed var(--muted); }
+  .note { color: var(--muted); font-size: .78rem; margin: 12px 4px 0; }
+  .none { color: var(--muted); font-size: .9rem; padding: 10px 0; }
+  .err { color: #b91c1c; }
+  @media (max-width: 380px) {
+    .row, .cols { grid-template-columns: 18px 22px minmax(0, 1fr) 54px 32px; }
+    .row .stk, .cols .c:last-child { display: none; }
+    .row { font-size: .85rem; }
+  }
+  footer { color: var(--muted); font-size: .75rem; text-align: center; margin-top: 18px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Standings</h1>
+  <p class="sub">Records can give away recent results, so each league stays hidden until you tap it.</p>
+  <nav class="nav"><a href="./">← Back to scores</a></nav>
+  <div id="leagues"><p class="none">Loading…</p></div>
+  <footer id="updated"></footer>
+</main>
+<script>
+(function () {
+  var root = document.getElementById("leagues");
+  var CUT_LABELS = { NBA: ["Playoff line", "Play-in line"], NHL: ["Playoff line"], NFL: ["Playoff line"] };
+  var NAMES = { NBA: "NBA", NHL: "NHL", NFL: "NFL" };
+  var TAGS = { wc: "WC", playin: "PI" };
+  var open = {}, view = {};  // per-league state, kept in memory only
+
+  function el(tag, cls, text) {
+    var e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text != null) e.textContent = text;
+    return e;
+  }
+  function logo(src) {
+    var i = document.createElement("img");
+    i.alt = ""; i.loading = "lazy"; i.referrerPolicy = "no-referrer";
+    if (src) i.src = src;
+    return i;
+  }
+  function colHeader(L) {
+    var h = el("div", "cols");
+    ["#", "", "Team", "Record", L.teams[Object.keys(L.teams)[0]].mainLabel, "Strk"].forEach(function (t, i) {
+      var c = el("span", i >= 3 ? "c" : "", t);
+      h.appendChild(c);
+    });
+    return h;
+  }
+  function row(L, t, rank) {
+    var r = el("div", "row " + (t.status === "out" ? "" : t.status === "playin" ? "playin" : "in") + (t.mine ? " mine" : ""));
+    r.appendChild(el("span", "rk", rank));
+    r.appendChild(logo(t.logo));
+    var nm = el("span", "nm", t.name);
+    if (TAGS[t.status]) nm.appendChild(el("span", "tag", TAGS[t.status]));
+    r.appendChild(nm);
+    r.appendChild(el("span", "rec", t.record));
+    r.appendChild(el("span", "main", t.main));
+    r.appendChild(el("span", "stk", t.streak));
+    return r;
+  }
+  function conferenceView(L) {
+    var f = document.createDocumentFragment();
+    L.conferences.forEach(function (c) {
+      f.appendChild(el("h2", null, c.name));
+      f.appendChild(colHeader(L));
+      c.order.forEach(function (id, i) {
+        f.appendChild(row(L, L.teams[id], i + 1));
+        var k = c.cuts.indexOf(i + 1);
+        if (k !== -1) f.appendChild(el("div", "cut", CUT_LABELS[L.key][k]));
+      });
+    });
+    return f;
+  }
+  function divisionView(L) {
+    var f = document.createDocumentFragment();
+    L.conferences.forEach(function (c) {
+      c.divisions.forEach(function (d) {
+        f.appendChild(el("h2", null, c.name.replace(" Conference", "") + " · " + d.name.replace(" Division", "")));
+        f.appendChild(colHeader(L));
+        d.ids.forEach(function (id, i) { f.appendChild(row(L, L.teams[id], i + 1)); });
+      });
+    });
+    return f;
+  }
+  function league(L) {
+    var card = el("section", "league");
+    var head = el("button", "head");
+    head.type = "button";
+    head.setAttribute("aria-expanded", "false");
+    var txt = el("div");
+    txt.appendChild(el("div", "lname", NAMES[L.key]));
+    var hint = el("div", "hint", "Tap to reveal");
+    txt.appendChild(hint);
+    head.appendChild(txt);
+    head.appendChild(el("span", "chev", "▾"));
+
+    var body = el("div", "body");
+    var seg = el("div", "seg");
+    var content = el("div");
+    var tabs = [["conf", "Playoff picture"], ["div", "Divisions"]];
+    var buttons = tabs.map(function (t) {
+      var b = el("button", null, t[1]); b.type = "button";
+      b.addEventListener("click", function () { view[L.key] = t[0]; paint(); });
+      seg.appendChild(b);
+      return b;
+    });
+    function paint() {
+      var v = view[L.key] || "conf";
+      buttons.forEach(function (b, i) { b.setAttribute("aria-pressed", tabs[i][0] === v); });
+      content.textContent = "";
+      content.appendChild(v === "conf" ? conferenceView(L) : divisionView(L));
+    }
+    body.appendChild(seg); body.appendChild(content);
+    body.appendChild(el("p", "note", L.note + " Your teams are highlighted."));
+    paint();
+
+    function setOpen(o) {
+      card.classList.toggle("open", o);
+      head.setAttribute("aria-expanded", o);
+      hint.textContent = o ? "" : "Tap to reveal";
+      open[L.key] = o;
+    }
+    head.addEventListener("click", function () { setOpen(!card.classList.contains("open")); });
+    card.appendChild(head); card.appendChild(body);
+    return card;
+  }
+
+  fetch("standings.json?t=" + Date.now(), { cache: "no-store" })
+    .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(function (d) {
+      root.textContent = "";
+      d.leagues.forEach(function (L) { root.appendChild(league(L)); });
+      if (d.updated)
+        document.getElementById("updated").textContent = "Standings last changed " +
+          new Date(d.updated).toLocaleString(undefined, { weekday: "short", month: "short", day: "numeric", hour: "numeric", minute: "2-digit" });
+    })
+    .catch(function () {
+      root.textContent = "";
+      root.appendChild(el("p", "none err", "Couldn't load standings. Try again in a moment."));
+    });
+})();
+</script>
+</body>
+</html>
