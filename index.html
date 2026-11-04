@@ -101,7 +101,7 @@
       <li><b>Football:</b> the team is winning or losing by less than 8 points</li>
       <li><b>Hockey:</b> the team is winning or tied</li>
     </ul>
-    <p>The page never sees the score, only whether these rules are met. Off by default.</p>
+    <p>Games in progress update by themselves every 30 seconds. The score is used only to check these rules and is never shown. Off by default.</p>
   </div>
   <div id="teams"><p class="none">Loading…</p></div>
   <footer id="updated"></footer>
@@ -125,6 +125,11 @@
     return i;
   }
   function game(g, upcoming) {
+    var o = live[g.id];
+    if (o && g.state !== "final")  // fresher info straight from ESPN
+      g = Object.assign({}, g, o.final
+        ? { state: "final", result: o.result }
+        : { state: "live", period: o.period, worthWatching: o.worth });
     var row = el("div", "game");
     row.appendChild(logo(g.opponentLogo));
     var opp = el("div", "opp");
@@ -175,6 +180,7 @@
   var openTeams = {};
   var meterOn = false;  // deliberately not remembered: it starts off every visit
   var lastData = null;
+  var live = {};  // game id -> latest period / verdict (or result) fetched from ESPN
 
   function render() {
     root.textContent = "";
@@ -192,17 +198,91 @@
     helpBtn.setAttribute("aria-expanded", !rules.hidden);
   });
 
+  // ---- Live games: ask ESPN directly, automatically ----------------------
+  // Only games in progress are checked. Each check reduces the response to a
+  // period label and a yes/no verdict; the score is never stored or shown.
+  var ESPN = "https://site.api.espn.com/apis/site/v2/sports/";
+  var PERIODS = { NBA: ["Q", 4], NFL: ["Q", 4], NCAAF: ["Q", 4], NHL: ["P", 3] };
+  var POLL_MS = 30000, RELOAD_MS = 300000, START_WINDOW_MS = 6 * 3600 * 1000;
+  var lastLoad = 0, polling = false;
+
+  function worthWatching(league, mine, theirs) {
+    var margin = mine - theirs;
+    if (league === "NHL") return margin >= 0;
+    return Math.abs(margin) < 8;
+  }
+  function targets() {
+    var out = [], now = Date.now();
+    if (!lastData) return out;
+    lastData.teams.forEach(function (t) {
+      if (!t.path || !t.id || !PERIODS[t.league]) return;
+      t.upcoming.forEach(function (g) {
+        var started = now - new Date(g.date).getTime();
+        if (g.state === "live" || (g.state === "upcoming" && started >= 0 && started < START_WINDOW_MS))
+          out.push({ t: t, g: g });
+      });
+    });
+    return out;
+  }
+  function checkGame(x) {
+    var ctl = new AbortController(), timer = setTimeout(function () { ctl.abort(); }, 10000);
+    return fetch(ESPN + x.t.path + "/summary?event=" + encodeURIComponent(x.g.id), { signal: ctl.signal })
+      .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(function (d) {
+        var c = d.header.competitions[0], st = c.status, state = st.type.state;
+        if (state === "pre") { delete live[x.g.id]; return; }
+        var mine = null, theirs = null, won = false, lost = false;
+        c.competitors.forEach(function (k) {
+          if (String(k.team.id) === String(x.t.id)) { mine = parseFloat(k.score); won = !!k.winner; }
+          else { theirs = parseFloat(k.score); lost = !!k.winner; }
+        });
+        if (state === "post") {
+          var ot = /OT|SO/.test(st.type.detail || "");
+          live[x.g.id] = { final: true, result: won ? "W" : lost ? (x.t.league === "NHL" && ot ? "OTL" : "L") : "T" };
+          return "final";
+        }
+        var p = PERIODS[x.t.league];
+        live[x.g.id] = {
+          period: typeof st.period === "number" && st.period >= 1 ? p[0] + Math.min(st.period, p[1]) : null,
+          worth: isNaN(mine) || isNaN(theirs) ? undefined : worthWatching(x.t.league, mine, theirs)
+        };
+      })
+      .catch(function () {})  // on any failure keep showing what we had
+      .then(function (v) { clearTimeout(timer); return v; });
+  }
+  function pollLive() {
+    if (polling || document.hidden) return;
+    var list = targets();
+    if (!list.length) return;
+    polling = true;
+    var before = JSON.stringify(live);
+    Promise.all(list.map(checkGame)).then(function (res) {
+      polling = false;
+      if (JSON.stringify(live) !== before && lastData) render();
+      if (res.indexOf("final") !== -1) lastLoad = 0;  // pull fresh results.json on next tick
+    });
+  }
+  function tick() {
+    if (document.hidden) return;
+    if (Date.now() - lastLoad > RELOAD_MS) load().then(pollLive); else pollLive();
+  }
+  setInterval(tick, POLL_MS);
+  document.addEventListener("visibilitychange", function () { if (!document.hidden) tick(); });
+
   function load() {
+    lastLoad = Date.now();
     return fetch("results.json?t=" + Date.now(), { cache: "no-store" })
       .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
       .then(function (data) {
         lastData = data;
         render();
+        pollLive();
         footer.textContent = data.updated
           ? "Results last changed " + new Date(data.updated).toLocaleString(undefined, fmtTime)
           : "";
       })
       .catch(function () {
+        if (lastData) return;  // a failed background reload keeps what's on screen
         root.textContent = "";
         root.appendChild(el("p", "none err", "Couldn't load results. Try again in a moment."));
       });

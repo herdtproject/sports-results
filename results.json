@@ -3,6 +3,8 @@
     {
       "name": "Utah Jazz",
       "league": "NBA",
+      "path": "basketball/nba",
+      "id": "26",
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/utah.png",
       "color": "#4e008e",
       "recent": [
@@ -70,6 +72,8 @@
     {
       "name": "Buffalo Bills",
       "league": "NFL",
+      "path": "football/nfl",
+      "id": "2",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/buf.png",
       "color": "#00338d",
       "recent": [
@@ -137,6 +141,8 @@
     {
       "name": "Utah Mammoth",
       "league": "NHL",
+      "path": "hockey/nhl",
+      "id": "129764",
       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/utah.png",
       "color": "#000000",
       "recent": [
@@ -206,6 +212,8 @@
     {
       "name": "BYU Cougars",
       "league": "NCAAF",
+      "path": "football/college-football",
+      "id": "252",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/252.png",
       "color": "#0047ba",
       "recent": [
@@ -271,5 +279,5 @@
       ]
     }
   ],
-  "updated": "2026-11-04T01:09Z"
+  "updated": "2026-11-04T01:16Z"
 }

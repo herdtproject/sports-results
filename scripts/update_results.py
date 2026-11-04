@@ -160,6 +160,8 @@ def build_team(name, path, tid, league):
     return {
         "name": name,
         "league": league,
+        "path": path,    # lets the page ask ESPN about games in progress
+        "id": tid,
         "logo": logo(info),
         "color": "#" + info["color"] if info.get("color") else None,
         "recent": list(reversed(finals)),  # most recent first
