@@ -105,15 +105,6 @@
   var NAMES = { NBA: "NBA", NHL: "NHL", NFL: "NFL" };
   var TAGS = { wc: "WC", playin: "PI" };
   var open = {}, view = {};  // per-league state, kept in memory only
-  var KEY = "sr.teams.v1";
-  var DEFAULTS = [{ l: "NBA", id: "26" }, { l: "NFL", id: "2" }, { l: "NHL", id: "129764" }, { l: "NCAAF", id: "252" }];
-  var chosen = (function () {  // the teams picked on the Teams page
-    var s = DEFAULTS;
-    try { var v = JSON.parse(localStorage.getItem(KEY)); if (Array.isArray(v)) s = v; } catch (e) {}
-    var set = {};
-    s.forEach(function (x) { if (x && x.l && x.id) set[x.l + ":" + x.id] = true; });
-    return set;
-  })();
 
   function el(tag, cls, text) {
     var e = document.createElement(tag);
@@ -136,7 +127,7 @@
     return h;
   }
   function row(L, t, rank) {
-    var r = el("div", "row " + (t.status === "out" ? "" : t.status === "playin" ? "playin" : "in") + (chosen[L.key + ":" + t.id] ? " mine" : ""));
+    var r = el("div", "row " + (t.status === "out" ? "" : t.status === "playin" ? "playin" : "in") + (t.mine ? " mine" : ""));
     r.appendChild(el("span", "rk", rank));
     r.appendChild(logo(t.logo));
     var nm = el("span", "nm", t.name);
@@ -198,7 +189,7 @@
       content.appendChild(v === "conf" ? conferenceView(L) : divisionView(L));
     }
     body.appendChild(seg); body.appendChild(content);
-    body.appendChild(el("p", "note", L.note + " Teams you follow are highlighted."));
+    body.appendChild(el("p", "note", L.note + " Your teams are highlighted."));
     paint();
 
     function setOpen(o) {
