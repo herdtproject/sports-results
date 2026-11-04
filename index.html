@@ -53,6 +53,35 @@
   .live { color: var(--live); font-weight: 650; font-size: .8rem; flex: none; }
   .none { color: var(--muted); font-size: .9rem; padding: 6px 0; }
   .err { color: var(--l); }
+  .meter { display: flex; align-items: center; gap: 10px; margin: 0 0 14px; }
+  .switch {
+    all: unset; box-sizing: border-box; flex: none; width: 46px; height: 28px; border-radius: 14px;
+    background: var(--line); position: relative; cursor: pointer; transition: background .2s;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .switch::after {
+    content: ""; position: absolute; top: 3px; left: 3px; width: 22px; height: 22px; border-radius: 50%;
+    background: #fff; box-shadow: 0 1px 2px rgba(0,0,0,.35); transition: transform .2s;
+  }
+  .switch[aria-checked="true"] { background: var(--w); }
+  .switch[aria-checked="true"]::after { transform: translateX(18px); }
+  .switch:focus-visible, .help:focus-visible { outline: 2px solid var(--live); outline-offset: 2px; }
+  .meter label { font-size: .95rem; font-weight: 600; cursor: pointer; }
+  .help {
+    all: unset; box-sizing: border-box; flex: none; width: 24px; height: 24px; border-radius: 50%;
+    border: 1.5px solid var(--muted); color: var(--muted); font-size: .8rem; font-weight: 700;
+    text-align: center; line-height: 21px; cursor: pointer; -webkit-tap-highlight-color: transparent;
+  }
+  .help[aria-expanded="true"] { background: var(--muted); color: var(--card); }
+  #rules {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 12px 16px; margin: -4px 0 14px; font-size: .85rem;
+  }
+  #rules[hidden] { display: none; }
+  #rules p { margin: 0 0 6px; color: var(--muted); }
+  #rules ul { margin: 0 0 6px; padding-left: 18px; }
+  #rules li { margin: 2px 0; }
+  .worth { display: block; color: var(--w); font-size: .8rem; font-weight: 650; margin-top: 2px; }
   footer { color: var(--muted); font-size: .75rem; text-align: center; margin-top: 18px; }
 </style>
 </head>
@@ -60,6 +89,20 @@
 <main>
   <h1>Spoiler-Free Scores</h1>
   <p class="sub">Tap a team to reveal results. No scores, ever.</p>
+  <div class="meter">
+    <button id="meter" class="switch" type="button" role="switch" aria-checked="false" aria-labelledby="meterLabel"></button>
+    <label id="meterLabel" for="meter">Worth-watching meter</label>
+    <button id="help" class="help" type="button" aria-label="How the meter decides" aria-expanded="false" aria-controls="rules">?</button>
+  </div>
+  <div id="rules" hidden>
+    <p>When on, a game in progress is flagged “Currently worth watching” if:</p>
+    <ul>
+      <li><b>Basketball:</b> the team is winning or losing by less than 8 points</li>
+      <li><b>Football:</b> the team is winning or losing by less than 8 points</li>
+      <li><b>Hockey:</b> the team is winning or tied</li>
+    </ul>
+    <p>The page never sees the score, only whether these rules are met. Off by default.</p>
+  </div>
   <div id="teams"><p class="none">Loading…</p></div>
   <footer id="updated"></footer>
 </main>
@@ -88,6 +131,7 @@
     opp.appendChild(el("b", null, (g.home ? "vs " : "at ") + g.opponent));
     var d = new Date(g.date);
     opp.appendChild(el("span", null, d.toLocaleString(undefined, upcoming ? fmtTime : fmt)));
+    if (meterOn && g.state === "live" && g.worthWatching) opp.appendChild(el("span", "worth", "Currently worth watching"));
     row.appendChild(opp);
     if (g.state === "live") row.appendChild(el("span", "live", "● " + (g.period || "In progress")));
     else if (g.result) row.appendChild(el("span", "badge " + g.result, g.result));
@@ -129,13 +173,31 @@
 
   var footer = document.getElementById("updated");
   var openTeams = {};
+  var meterOn = false;  // deliberately not remembered: it starts off every visit
+  var lastData = null;
+
+  function render() {
+    root.textContent = "";
+    lastData.teams.forEach(function (t, i) { root.appendChild(card(t, i)); });
+  }
+  var meterBtn = document.getElementById("meter");
+  meterBtn.addEventListener("click", function () {
+    meterOn = !meterOn;
+    meterBtn.setAttribute("aria-checked", meterOn);
+    if (lastData) render();
+  });
+  var helpBtn = document.getElementById("help"), rules = document.getElementById("rules");
+  helpBtn.addEventListener("click", function () {
+    rules.hidden = !rules.hidden;
+    helpBtn.setAttribute("aria-expanded", !rules.hidden);
+  });
 
   function load() {
     return fetch("results.json?t=" + Date.now(), { cache: "no-store" })
       .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
       .then(function (data) {
-        root.textContent = "";
-        data.teams.forEach(function (t, i) { root.appendChild(card(t, i)); });
+        lastData = data;
+        render();
         footer.textContent = data.updated
           ? "Results last changed " + new Date(data.updated).toLocaleString(undefined, fmtTime)
           : "";

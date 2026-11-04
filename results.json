@@ -180,7 +180,8 @@
           "opponentAbbr": "TOR",
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/tor.png",
           "state": "live",
-          "period": "P1"
+          "period": "P2",
+          "worthWatching": true
         },
         {
           "id": "401892648",
@@ -270,5 +271,5 @@
       ]
     }
   ],
-  "updated": "2026-11-04T01:00Z"
+  "updated": "2026-11-04T01:09Z"
 }

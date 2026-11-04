@@ -58,6 +58,31 @@ def logo(team):
     return team["logos"][0]["href"] if team.get("logos") else None
 
 
+def worth_watching(league, mine, theirs):
+    """The "worth watching" rules, applied to the live score.
+    Basketball / football: within 7 points either way. Hockey: winning or tied."""
+    margin = mine - theirs
+    if league == "NHL":
+        return margin >= 0
+    if league in ("NBA", "NFL", "NCAAF"):
+        return abs(margin) < 8
+    return None
+
+
+def live_verdict(path, event_id, tid, league):
+    """Look up the live score and reduce it to True/False. The score itself is
+    used here and then thrown away."""
+    try:
+        comp = get(f"{BASE}/{path}/summary?event={event_id}")["header"]["competitions"][0]
+        scores = {c["team"]["id"]: float(c["score"]) for c in comp["competitors"]}
+        mine = scores[tid]
+        theirs = next(v for k, v in scores.items() if k != tid)
+        return worth_watching(league, mine, theirs)
+    except Exception as exc:
+        print(f"  (no live score for {event_id}: {exc})", file=sys.stderr)
+        return None
+
+
 def parse(ev, tid, league=None):
     comp = ev["competitions"][0]
     me = next((c for c in comp["competitors"] if c["team"]["id"] == tid), None)
@@ -118,6 +143,11 @@ def build_team(name, path, tid, league):
 
     finals = [g for g in uniq if g["state"] == "final"][-PAST:]
     ahead = [g for g in uniq if g["state"] in ("live", "upcoming")][:FUTURE]
+    for g in ahead:
+        if g["state"] == "live":
+            verdict = live_verdict(path, g["id"], tid, league)
+            if verdict is not None:
+                g["worthWatching"] = verdict
     for g in finals:
         # Hockey: a loss in overtime or a shootout is an OTL, not an L.
         if league == "NHL" and g["result"] == "L" and any(
