@@ -15,6 +15,10 @@ BASE = "https://site.api.espn.com/apis/site/v2/sports"
 OUT = Path(__file__).resolve().parent.parent / "results.json"
 PAST, FUTURE = 3, 3
 
+# Live games show only the current period, capped at the last regulation one
+# so overtime is never revealed: (label prefix, number of regulation periods).
+PERIODS = {"NBA": ("Q", 4), "NFL": ("Q", 4), "NCAAF": ("Q", 4), "NHL": ("P", 3)}
+
 # name, sport/league path, ESPN team id, short league label
 TEAMS = [
     ("Utah Jazz", "basketball/nba", "utah", "NBA"),
@@ -54,7 +58,7 @@ def logo(team):
     return team["logos"][0]["href"] if team.get("logos") else None
 
 
-def parse(ev, tid):
+def parse(ev, tid, league=None):
     comp = ev["competitions"][0]
     me = next((c for c in comp["competitors"] if c["team"]["id"] == tid), None)
     opp = next((c for c in comp["competitors"] if c is not me), None)
@@ -80,6 +84,10 @@ def parse(ev, tid):
         g["_detail"] = st.get("detail", "")
     elif st["state"] == "in":
         g["state"] = "live"
+        prefix, regulation = PERIODS.get(league, ("", 0))
+        period = comp["status"].get("period")
+        if prefix and isinstance(period, int) and period >= 1:
+            g["period"] = f"{prefix}{min(period, regulation)}"
     else:
         g["state"] = "upcoming"
     return g
@@ -93,13 +101,13 @@ def build_team(name, path, tid, league):
     tid_path = slug
     events = fetch_events(path, tid_path) + fetch_events(path, tid_path, "?seasontype=3")
     year = season_year(path, tid_path)
-    games = [g for g in (parse(e, tid) for e in events) if g]
+    games = [g for g in (parse(e, tid, league) for e in events) if g]
     # Near a season boundary, borrow from the neighbouring season.
     if year and sum(g["state"] == "final" for g in games) < PAST:
         for extra in (f"?season={year-1}", f"?season={year-1}&seasontype=3"):
-            games += [g for g in (parse(e, tid) for e in fetch_events(path, tid_path, extra)) if g]
+            games += [g for g in (parse(e, tid, league) for e in fetch_events(path, tid_path, extra)) if g]
     if year and sum(g["state"] != "final" for g in games) < FUTURE:
-        games += [g for g in (parse(e, tid) for e in fetch_events(path, tid_path, f"?season={year+1}")) if g]
+        games += [g for g in (parse(e, tid, league) for e in fetch_events(path, tid_path, f"?season={year+1}")) if g]
 
     seen, uniq = set(), []
     for g in games:

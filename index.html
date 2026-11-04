@@ -89,7 +89,7 @@
     var d = new Date(g.date);
     opp.appendChild(el("span", null, d.toLocaleString(undefined, upcoming ? fmtTime : fmt)));
     row.appendChild(opp);
-    if (g.state === "live") row.appendChild(el("span", "live", "● In progress"));
+    if (g.state === "live") row.appendChild(el("span", "live", "● " + (g.period || "In progress")));
     else if (g.result) row.appendChild(el("span", "badge " + g.result, g.result));
     return row;
   }
