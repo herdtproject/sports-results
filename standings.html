@@ -164,8 +164,6 @@
     head.setAttribute("aria-expanded", "false");
     var txt = el("div");
     txt.appendChild(el("div", "lname", NAMES[L.key]));
-    var hint = el("div", "hint", "Tap to reveal");
-    txt.appendChild(hint);
     head.appendChild(txt);
     head.appendChild(el("span", "chev", "▾"));
 
@@ -192,7 +190,6 @@
     function setOpen(o) {
       card.classList.toggle("open", o);
       head.setAttribute("aria-expanded", o);
-      hint.textContent = o ? "" : "Tap to reveal";
       open[L.key] = o;
     }
     head.addEventListener("click", function () { setOpen(!card.classList.contains("open")); });

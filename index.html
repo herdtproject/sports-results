@@ -23,12 +23,14 @@
     --bg: #f4f5f7; --card: #fff; --text: #14161a; --muted: #6b7280; --line: #e5e7eb;
     --w: #15803d; --w-bg: #dcfce7; --l: #b91c1c; --l-bg: #fee2e2;
     --otl: #b45309; --otl-bg: #fef3c7; --t: #475569; --t-bg: #e2e8f0; --live: #2563eb;
+    --btn-bg: #2563eb; --btn-text: #ffffff;
   }
   @media (prefers-color-scheme: dark) {
     :root {
       --bg: #0e1013; --card: #181b20; --text: #f1f2f4; --muted: #9aa1ac; --line: #2a2f37;
       --w: #4ade80; --w-bg: #14391f; --l: #f87171; --l-bg: #431818;
       --otl: #fbbf24; --otl-bg: #3d2d0a; --t: #cbd5e1; --t-bg: #2b323c; --live: #60a5fa;
+      --btn-bg: #60a5fa; --btn-text: #0b1220;
     }
   }
   * { box-sizing: border-box; }
@@ -40,10 +42,15 @@
   main { max-width: 560px; margin: 0 auto; }
   h1 { font-size: 1.25rem; margin: 4px 0 2px; }
   .sub { color: var(--muted); font-size: .85rem; margin: 0 0 8px; }
-  .nav { margin: 0 0 10px; }
-  .nav a { color: var(--live); font-size: .9rem; font-weight: 600; text-decoration: none; padding: 6px 0; display: inline-block; }
-  .nav a:hover { text-decoration: underline; }
-  .nav a:focus-visible { outline: 2px solid var(--live); outline-offset: 2px; border-radius: 4px; }
+  .nav { margin: 0 0 14px; }
+  .nav a {
+    display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 20px;
+    background: var(--btn-bg); color: var(--btn-text); border-radius: 12px;
+    font-size: .95rem; font-weight: 700; text-decoration: none;
+    box-shadow: 0 1px 2px rgba(0,0,0,.25); -webkit-tap-highlight-color: transparent;
+  }
+  .nav a:active { filter: brightness(.92); transform: translateY(1px); }
+  .nav a:focus-visible { outline: 2px solid var(--text); outline-offset: 2px; }
   .team { background: var(--card); border: 1px solid var(--line); border-radius: 14px; margin-bottom: 12px; overflow: hidden; }
   .head {
     all: unset; box-sizing: border-box; display: flex; align-items: center; gap: 14px;
@@ -176,7 +183,7 @@
     h.appendChild(logo(t.logo));
     var txt = el("div");
     txt.appendChild(el("div", "name", t.name));
-    txt.appendChild(el("div", "hint", t.league + " · tap to reveal"));
+    txt.appendChild(el("div", "hint", t.league));
     h.appendChild(txt);
     h.appendChild(el("span", "chev", "▾"));
     var b = el("div", "body"); b.id = "body" + idx;
@@ -185,7 +192,6 @@
     function setOpen(open) {
       c.classList.toggle("open", open);
       h.setAttribute("aria-expanded", open);
-      txt.lastChild.textContent = t.league + (open ? "" : " · tap to reveal");
       if (open) openTeams[t.name] = true; else delete openTeams[t.name];
     }
     h.addEventListener("click", function () { setOpen(!c.classList.contains("open")); });
