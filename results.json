@@ -207,11 +207,14 @@
           "opponent": "Montreal Canadiens",
           "opponentAbbr": "MTL",
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/mtl.png",
-          "state": "upcoming",
+          "state": "live",
+          "period": "P3",
           "tv": [
             "ESPN+",
-            "Utah 16"
-          ]
+            "Utah 16",
+            "Mammoth+"
+          ],
+          "worthWatching": true
         },
         {
           "id": "401892666",
@@ -392,5 +395,5 @@
       ]
     }
   ],
-  "updated": "2026-11-05T08:34Z"
+  "updated": "2026-11-06T02:40Z"
 }
