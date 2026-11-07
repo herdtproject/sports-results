@@ -605,10 +605,10 @@
      "name": "Panthers",
      "abbr": "FLA",
      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/fla.png",
-     "record": "9-5-2",
+     "record": "9-6-2",
      "main": "20",
      "mainLabel": "PTS",
-     "streak": "W1",
+     "streak": "L1",
      "seed": 7,
      "mine": false,
      "status": "wc",
@@ -637,10 +637,10 @@
      "main": "18",
      "mainLabel": "PTS",
      "streak": "L1",
-     "seed": 10,
+     "seed": 11,
      "mine": false,
      "status": "out",
-     "rank": 10
+     "rank": 11
     },
     "5": {
      "id": "5",
@@ -651,10 +651,10 @@
      "main": "17",
      "mainLabel": "PTS",
      "streak": "L2",
-     "seed": 11,
+     "seed": 12,
      "mine": false,
      "status": "out",
-     "rank": 11
+     "rank": 12
     },
     "7": {
      "id": "7",
@@ -703,14 +703,14 @@
      "name": "Capitals",
      "abbr": "WSH",
      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/wsh.png",
-     "record": "8-6-0",
-     "main": "16",
+     "record": "9-6-0",
+     "main": "18",
      "mainLabel": "PTS",
-     "streak": "L2",
-     "seed": 12,
+     "streak": "W1",
+     "seed": 10,
      "mine": false,
      "status": "out",
-     "rank": 12
+     "rank": 10
     },
     "12": {
      "id": "12",
@@ -796,6 +796,20 @@
      "status": "div",
      "rank": 4
     },
+    "27": {
+     "id": "27",
+     "name": "Predators",
+     "abbr": "NSH",
+     "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/nsh.png",
+     "record": "8-4-5",
+     "main": "21",
+     "mainLabel": "PTS",
+     "streak": "W4",
+     "seed": 5,
+     "mine": false,
+     "status": "div",
+     "rank": 5
+    },
     "9": {
      "id": "9",
      "name": "Stars",
@@ -805,10 +819,10 @@
      "main": "20",
      "mainLabel": "PTS",
      "streak": "L1",
-     "seed": 5,
+     "seed": 6,
      "mine": false,
-     "status": "div",
-     "rank": 5
+     "status": "wc",
+     "rank": 6
     },
     "17": {
      "id": "17",
@@ -819,34 +833,20 @@
      "main": "20",
      "mainLabel": "PTS",
      "streak": "L2",
-     "seed": 6,
+     "seed": 7,
      "mine": false,
      "status": "wc",
-     "rank": 6
-    },
-    "27": {
-     "id": "27",
-     "name": "Predators",
-     "abbr": "NSH",
-     "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/nsh.png",
-     "record": "7-4-5",
-     "main": "19",
-     "mainLabel": "PTS",
-     "streak": "W3",
-     "seed": 8,
-     "mine": false,
-     "status": "wc",
-     "rank": 8
+     "rank": 7
     },
     "19": {
      "id": "19",
      "name": "Blues",
      "abbr": "STL",
      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/stl.png",
-     "record": "7-7-2",
+     "record": "7-8-2",
      "main": "16",
      "mainLabel": "PTS",
-     "streak": "L2",
+     "streak": "L3",
      "seed": 10,
      "mine": false,
      "status": "out",
@@ -917,10 +917,10 @@
      "main": "19",
      "mainLabel": "PTS",
      "streak": "W1",
-     "seed": 7,
+     "seed": 8,
      "mine": false,
      "status": "div",
-     "rank": 7
+     "rank": 8
     },
     "25": {
      "id": "25",
@@ -1034,9 +1034,9 @@
       "26",
       "13",
       "2",
+      "23",
       "21",
       "5",
-      "23",
       "12",
       "29",
       "16",
@@ -1054,9 +1054,9 @@
        "ids": [
         "30",
         "129764",
+        "27",
         "9",
         "17",
-        "27",
         "19",
         "28",
         "4"
@@ -1081,10 +1081,10 @@
       "6",
       "37",
       "129764",
+      "27",
       "9",
       "17",
       "124292",
-      "27",
       "25",
       "19",
       "3",
@@ -1681,5 +1681,5 @@
    ]
   }
  ],
- "updated": "2026-11-07T08:08Z"
+ "updated": "2026-11-07T22:47Z"
 }

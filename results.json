@@ -250,6 +250,16 @@
       "color": "#0047ba",
       "recent": [
         {
+          "id": "401856849",
+          "date": "2026-11-07T17:00Z",
+          "home": false,
+          "opponent": "Utah Utes",
+          "opponentAbbr": "UTAH",
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/254.png",
+          "state": "final",
+          "result": "L"
+        },
+        {
           "id": "401856843",
           "date": "2026-10-31T19:30Z",
           "home": true,
@@ -268,33 +278,9 @@
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2116.png",
           "state": "final",
           "result": "L"
-        },
-        {
-          "id": "401856809",
-          "date": "2026-10-17T23:30Z",
-          "home": true,
-          "opponent": "Notre Dame Fighting Irish",
-          "opponentAbbr": "ND",
-          "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/87.png",
-          "state": "final",
-          "result": "W"
         }
       ],
       "upcoming": [
-        {
-          "id": "401856849",
-          "date": "2026-11-07T17:00Z",
-          "home": false,
-          "opponent": "Utah Utes",
-          "opponentAbbr": "UTAH",
-          "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/254.png",
-          "state": "live",
-          "period": "Q3",
-          "tv": [
-            "ABC"
-          ],
-          "worthWatching": true
-        },
         {
           "id": "401856858",
           "date": "2026-11-14T05:00Z",
@@ -311,6 +297,15 @@
           "opponent": "Kansas Jayhawks",
           "opponentAbbr": "KU",
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2305.png",
+          "state": "upcoming"
+        },
+        {
+          "id": "401856876",
+          "date": "2026-11-28T05:00Z",
+          "home": true,
+          "opponent": "Cincinnati Bearcats",
+          "opponentAbbr": "CIN",
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2132.png",
           "state": "upcoming"
         }
       ]
@@ -394,5 +389,5 @@
       ]
     }
   ],
-  "updated": "2026-11-07T19:13Z"
+  "updated": "2026-11-07T22:47Z"
 }
