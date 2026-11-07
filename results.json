@@ -288,10 +288,12 @@
           "opponent": "Utah Utes",
           "opponentAbbr": "UTAH",
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/254.png",
-          "state": "upcoming",
+          "state": "live",
+          "period": "Q3",
           "tv": [
             "ABC"
-          ]
+          ],
+          "worthWatching": true
         },
         {
           "id": "401856858",
@@ -392,5 +394,5 @@
       ]
     }
   ],
-  "updated": "2026-11-07T08:08Z"
+  "updated": "2026-11-07T19:13Z"
 }
