@@ -47,11 +47,13 @@
           "opponent": "Dallas Mavericks",
           "opponentAbbr": "DAL",
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/dal.png",
-          "state": "upcoming",
+          "state": "live",
+          "period": "Q2",
           "tv": [
             "KJZZ-TV",
             "Jazz+"
-          ]
+          ],
+          "worthWatching": true
         },
         {
           "id": "401909947",
@@ -392,5 +394,5 @@
       ]
     }
   ],
-  "updated": "2026-11-06T09:55Z"
+  "updated": "2026-11-07T01:50Z"
 }
