@@ -207,11 +207,13 @@
           "opponent": "Ottawa Senators",
           "opponentAbbr": "OTT",
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/ott.png",
-          "state": "upcoming",
+          "state": "live",
+          "period": "P2",
           "tv": [
             "NHL Net",
             "Mammoth+"
-          ]
+          ],
+          "worthWatching": true
         },
         {
           "id": "401892693",
@@ -389,5 +391,5 @@
       ]
     }
   ],
-  "updated": "2026-11-07T22:47Z"
+  "updated": "2026-11-08T01:53Z"
 }
