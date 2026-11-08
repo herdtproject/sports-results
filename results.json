@@ -283,12 +283,15 @@
       "upcoming": [
         {
           "id": "401856858",
-          "date": "2026-11-14T05:00Z",
+          "date": "2026-11-14T20:30Z",
           "home": true,
           "opponent": "Baylor Bears",
           "opponentAbbr": "BAY",
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/239.png",
-          "state": "upcoming"
+          "state": "upcoming",
+          "tv": [
+            "Fox"
+          ]
         },
         {
           "id": "401856866",
@@ -389,5 +392,5 @@
       ]
     }
   ],
-  "updated": "2026-11-08T19:53Z"
+  "updated": "2026-11-08T23:22Z"
 }
