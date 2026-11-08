@@ -1179,14 +1179,14 @@
      "name": "Bengals",
      "abbr": "CIN",
      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/cin.png",
-     "record": "5-2",
-     "main": ".714",
+     "record": "6-2",
+     "main": ".750",
      "mainLabel": "PCT",
-     "streak": "W3",
-     "seed": 6,
+     "streak": "W4",
+     "seed": 5,
      "mine": false,
      "status": "wc",
-     "rank": 6
+     "rank": 5
     },
     "5": {
      "id": "5",
@@ -1295,10 +1295,10 @@
      "main": ".714",
      "mainLabel": "PCT",
      "streak": "L2",
-     "seed": 5,
+     "seed": 6,
      "mine": false,
      "status": "wc",
-     "rank": 5
+     "rank": 6
     },
     "13": {
      "id": "13",
@@ -1351,10 +1351,10 @@
      "main": ".375",
      "mainLabel": "PCT",
      "streak": "L1",
-     "seed": 13,
+     "seed": 12,
      "mine": false,
      "status": "out",
-     "rank": 13
+     "rank": 12
     },
     "28": {
      "id": "28",
@@ -1365,10 +1365,10 @@
      "main": ".357",
      "mainLabel": "PCT",
      "streak": "W1",
-     "seed": 14,
+     "seed": 13,
      "mine": false,
      "status": "out",
-     "rank": 14
+     "rank": 13
     },
     "21": {
      "id": "21",
@@ -1473,14 +1473,14 @@
      "name": "Falcons",
      "abbr": "ATL",
      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/atl.png",
-     "record": "3-5",
-     "main": ".375",
+     "record": "3-6",
+     "main": ".333",
      "mainLabel": "PCT",
-     "streak": "L1",
-     "seed": 11,
+     "streak": "L2",
+     "seed": 14,
      "mine": false,
      "status": "out",
-     "rank": 11
+     "rank": 14
     },
     "18": {
      "id": "18",
@@ -1547,10 +1547,10 @@
      "main": ".375",
      "mainLabel": "PCT",
      "streak": "W1",
-     "seed": 12,
+     "seed": 11,
      "mine": false,
      "status": "out",
-     "rank": 12
+     "rank": 11
     }
    },
    "conferences": [
@@ -1599,8 +1599,8 @@
       "7",
       "30",
       "23",
-      "12",
       "4",
+      "12",
       "17",
       "5",
       "13",
@@ -1667,10 +1667,10 @@
       "26",
       "14",
       "27",
-      "1",
       "22",
       "6",
       "28",
+      "1",
       "18",
       "21"
      ],
@@ -1681,5 +1681,5 @@
    ]
   }
  ],
- "updated": "2026-11-08T08:27Z"
+ "updated": "2026-11-08T19:53Z"
 }
