@@ -169,6 +169,16 @@
       "color": "#000000",
       "recent": [
         {
+          "id": "401892666",
+          "date": "2026-11-08T00:00Z",
+          "home": false,
+          "opponent": "Ottawa Senators",
+          "opponentAbbr": "OTT",
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/ott.png",
+          "state": "final",
+          "result": "L"
+        },
+        {
           "id": "401892648",
           "date": "2026-11-06T00:00Z",
           "home": false,
@@ -187,34 +197,9 @@
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/tor.png",
           "state": "final",
           "result": "W"
-        },
-        {
-          "id": "401892626",
-          "date": "2026-11-01T21:00Z",
-          "home": false,
-          "opponent": "Philadelphia Flyers",
-          "opponentAbbr": "PHI",
-          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/phi.png",
-          "state": "final",
-          "result": "L"
         }
       ],
       "upcoming": [
-        {
-          "id": "401892666",
-          "date": "2026-11-08T00:00Z",
-          "home": false,
-          "opponent": "Ottawa Senators",
-          "opponentAbbr": "OTT",
-          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/ott.png",
-          "state": "live",
-          "period": "P2",
-          "tv": [
-            "NHL Net",
-            "Mammoth+"
-          ],
-          "worthWatching": true
-        },
         {
           "id": "401892693",
           "date": "2026-11-12T02:30Z",
@@ -235,6 +220,19 @@
           "opponent": "St. Louis Blues",
           "opponentAbbr": "STL",
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/stl.png",
+          "state": "upcoming",
+          "tv": [
+            "ESPN+",
+            "Utah 16"
+          ]
+        },
+        {
+          "id": "401892718",
+          "date": "2026-11-15T02:00Z",
+          "home": true,
+          "opponent": "San Jose Sharks",
+          "opponentAbbr": "SJ",
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/sj.png",
           "state": "upcoming",
           "tv": [
             "ESPN+",
@@ -391,5 +389,5 @@
       ]
     }
   ],
-  "updated": "2026-11-08T01:53Z"
+  "updated": "2026-11-08T08:27Z"
 }
