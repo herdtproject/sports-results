@@ -9,6 +9,16 @@
       "color": "#4e008e",
       "recent": [
         {
+          "id": "401909947",
+          "date": "2026-11-09T00:00Z",
+          "home": false,
+          "opponent": "Minnesota Timberwolves",
+          "opponentAbbr": "MIN",
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/min.png",
+          "state": "final",
+          "result": "L"
+        },
+        {
           "id": "401909290",
           "date": "2026-11-07T01:00Z",
           "home": false,
@@ -27,32 +37,9 @@
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/no.png",
           "state": "final",
           "result": "L"
-        },
-        {
-          "id": "401909917",
-          "date": "2026-11-03T01:30Z",
-          "home": false,
-          "opponent": "San Antonio Spurs",
-          "opponentAbbr": "SA",
-          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/sa.png",
-          "state": "final",
-          "result": "L"
         }
       ],
       "upcoming": [
-        {
-          "id": "401909947",
-          "date": "2026-11-09T00:00Z",
-          "home": false,
-          "opponent": "Minnesota Timberwolves",
-          "opponentAbbr": "MIN",
-          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/min.png",
-          "state": "upcoming",
-          "tv": [
-            "KJZZ-TV",
-            "Jazz+"
-          ]
-        },
         {
           "id": "401909963",
           "date": "2026-11-11T02:00Z",
@@ -73,6 +60,19 @@
           "opponent": "Orlando Magic",
           "opponentAbbr": "ORL",
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/orl.png",
+          "state": "upcoming",
+          "tv": [
+            "KJZZ-TV",
+            "Jazz+"
+          ]
+        },
+        {
+          "id": "401909301",
+          "date": "2026-11-14T01:30Z",
+          "home": false,
+          "opponent": "Houston Rockets",
+          "opponentAbbr": "HOU",
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/hou.png",
           "state": "upcoming",
           "tv": [
             "KJZZ-TV",
@@ -392,5 +392,5 @@
       ]
     }
   ],
-  "updated": "2026-11-08T23:22Z"
+  "updated": "2026-11-09T02:51Z"
 }
