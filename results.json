@@ -128,11 +128,13 @@
           "opponent": "Minnesota Vikings",
           "opponentAbbr": "MIN",
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/min.png",
-          "state": "upcoming",
+          "state": "live",
+          "period": "Q3",
           "tv": [
             "ESPN",
             "ABC"
-          ]
+          ],
+          "worthWatching": true
         },
         {
           "id": "401873054",
@@ -392,5 +394,5 @@
       ]
     }
   ],
-  "updated": "2026-11-09T02:51Z"
+  "updated": "2026-11-10T03:30Z"
 }
