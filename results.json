@@ -90,6 +90,16 @@
       "color": "#00338d",
       "recent": [
         {
+          "id": "401873051",
+          "date": "2026-11-10T01:15Z",
+          "home": false,
+          "opponent": "Minnesota Vikings",
+          "opponentAbbr": "MIN",
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/min.png",
+          "state": "final",
+          "result": "W"
+        },
+        {
           "id": "401873026",
           "date": "2026-11-01T18:00Z",
           "home": true,
@@ -108,34 +118,9 @@
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/lv.png",
           "state": "final",
           "result": "W"
-        },
-        {
-          "id": "401872994",
-          "date": "2026-10-13T00:15Z",
-          "home": false,
-          "opponent": "Los Angeles Rams",
-          "opponentAbbr": "LAR",
-          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/lar.png",
-          "state": "final",
-          "result": "W"
         }
       ],
       "upcoming": [
-        {
-          "id": "401873051",
-          "date": "2026-11-10T01:15Z",
-          "home": false,
-          "opponent": "Minnesota Vikings",
-          "opponentAbbr": "MIN",
-          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/min.png",
-          "state": "live",
-          "period": "Q3",
-          "tv": [
-            "ESPN",
-            "ABC"
-          ],
-          "worthWatching": true
-        },
         {
           "id": "401873054",
           "date": "2026-11-15T18:00Z",
@@ -158,6 +143,18 @@
           "state": "upcoming",
           "tv": [
             "CBS"
+          ]
+        },
+        {
+          "id": "401873082",
+          "date": "2026-11-27T01:20Z",
+          "home": true,
+          "opponent": "Kansas City Chiefs",
+          "opponentAbbr": "KC",
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/kc.png",
+          "state": "upcoming",
+          "tv": [
+            "NBC"
           ]
         }
       ]
@@ -394,5 +391,5 @@
       ]
     }
   ],
-  "updated": "2026-11-10T03:30Z"
+  "updated": "2026-11-10T11:43Z"
 }
