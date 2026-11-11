@@ -222,7 +222,8 @@
           "state": "upcoming",
           "tv": [
             "ESPN+",
-            "Utah 16"
+            "Utah 16",
+            "Mammoth+"
           ]
         },
         {
@@ -235,7 +236,8 @@
           "state": "upcoming",
           "tv": [
             "ESPN+",
-            "Utah 16"
+            "Utah 16",
+            "Mammoth+"
           ]
         }
       ]
@@ -391,5 +393,5 @@
       ]
     }
   ],
-  "updated": "2026-11-11T11:55Z"
+  "updated": "2026-11-11T19:08Z"
 }
