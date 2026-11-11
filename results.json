@@ -9,6 +9,16 @@
       "color": "#4e008e",
       "recent": [
         {
+          "id": "401909963",
+          "date": "2026-11-11T02:00Z",
+          "home": true,
+          "opponent": "Miami Heat",
+          "opponentAbbr": "MIA",
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/mia.png",
+          "state": "final",
+          "result": "L"
+        },
+        {
           "id": "401909947",
           "date": "2026-11-09T00:00Z",
           "home": false,
@@ -27,34 +37,9 @@
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/dal.png",
           "state": "final",
           "result": "L"
-        },
-        {
-          "id": "401909928",
-          "date": "2026-11-05T01:00Z",
-          "home": false,
-          "opponent": "New Orleans Pelicans",
-          "opponentAbbr": "NO",
-          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/no.png",
-          "state": "final",
-          "result": "L"
         }
       ],
       "upcoming": [
-        {
-          "id": "401909963",
-          "date": "2026-11-11T02:00Z",
-          "home": true,
-          "opponent": "Miami Heat",
-          "opponentAbbr": "MIA",
-          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/mia.png",
-          "state": "live",
-          "period": "Q4",
-          "tv": [
-            "KJZZ-TV",
-            "Jazz+"
-          ],
-          "worthWatching": false
-        },
         {
           "id": "401909973",
           "date": "2026-11-12T02:00Z",
@@ -75,6 +60,19 @@
           "opponent": "Houston Rockets",
           "opponentAbbr": "HOU",
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/hou.png",
+          "state": "upcoming",
+          "tv": [
+            "KJZZ-TV",
+            "Jazz+"
+          ]
+        },
+        {
+          "id": "401909988",
+          "date": "2026-11-15T22:00Z",
+          "home": true,
+          "opponent": "San Antonio Spurs",
+          "opponentAbbr": "SA",
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/sa.png",
           "state": "upcoming",
           "tv": [
             "KJZZ-TV",
@@ -393,5 +391,5 @@
       ]
     }
   ],
-  "updated": "2026-11-11T04:10Z"
+  "updated": "2026-11-11T11:55Z"
 }

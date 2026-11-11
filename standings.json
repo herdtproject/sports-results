@@ -111,10 +111,10 @@
      "main": ".273",
      "mainLabel": "PCT",
      "streak": "L2",
-     "seed": 11,
+     "seed": 12,
      "mine": false,
      "status": "out",
-     "rank": 11
+     "rank": 12
     },
     "5": {
      "id": "5",
@@ -125,10 +125,10 @@
      "main": ".455",
      "mainLabel": "PCT",
      "streak": "L2",
-     "seed": 7,
+     "seed": 8,
      "mine": false,
      "status": "playin",
-     "rank": 7
+     "rank": 8
     },
     "8": {
      "id": "8",
@@ -149,14 +149,14 @@
      "name": "Magic",
      "abbr": "ORL",
      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/orl.png",
-     "record": "2-7",
-     "main": ".222",
+     "record": "3-7",
+     "main": ".300",
      "mainLabel": "PCT",
-     "streak": "L4",
-     "seed": 12,
+     "streak": "W1",
+     "seed": 11,
      "mine": false,
      "status": "out",
-     "rank": 12
+     "rank": 11
     },
     "30": {
      "id": "30",
@@ -191,14 +191,14 @@
      "name": "Heat",
      "abbr": "MIA",
      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/mia.png",
-     "record": "4-6",
-     "main": ".400",
+     "record": "5-6",
+     "main": ".455",
      "mainLabel": "PCT",
-     "streak": "W1",
-     "seed": 8,
+     "streak": "W2",
+     "seed": 7,
      "mine": false,
      "status": "playin",
-     "rank": 8
+     "rank": 7
     },
     "1": {
      "id": "1",
@@ -219,10 +219,10 @@
      "name": "Jazz",
      "abbr": "UTAH",
      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/utah.png",
-     "record": "1-9",
-     "main": ".100",
+     "record": "1-10",
+     "main": ".091",
      "mainLabel": "PCT",
-     "streak": "L8",
+     "streak": "L9",
      "seed": 15,
      "mine": true,
      "status": "out",
@@ -247,10 +247,10 @@
      "name": "Trail Blazers",
      "abbr": "POR",
      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/por.png",
-     "record": "6-3",
-     "main": ".667",
+     "record": "7-3",
+     "main": ".700",
      "mainLabel": "PCT",
-     "streak": "L2",
+     "streak": "W1",
      "seed": 8,
      "mine": false,
      "status": "playin",
@@ -265,34 +265,34 @@
      "main": ".727",
      "mainLabel": "PCT",
      "streak": "W4",
-     "seed": 5,
+     "seed": 3,
      "mine": false,
      "status": "in",
-     "rank": 5
+     "rank": 3
     },
     "25": {
      "id": "25",
      "name": "Thunder",
      "abbr": "OKC",
      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/okc.png",
-     "record": "8-2",
-     "main": ".800",
+     "record": "8-3",
+     "main": ".727",
      "mainLabel": "PCT",
-     "streak": "W4",
-     "seed": 3,
+     "streak": "L1",
+     "seed": 6,
      "mine": false,
      "status": "in",
-     "rank": 3
+     "rank": 6
     },
     "23": {
      "id": "23",
      "name": "Kings",
      "abbr": "SAC",
      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/sac.png",
-     "record": "1-9",
-     "main": ".100",
+     "record": "1-10",
+     "main": ".091",
      "mainLabel": "PCT",
-     "streak": "L3",
+     "streak": "L4",
      "seed": 14,
      "mine": false,
      "status": "out",
@@ -303,10 +303,10 @@
      "name": "Clippers",
      "abbr": "LAC",
      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/lac.png",
-     "record": "2-7",
-     "main": ".222",
+     "record": "2-8",
+     "main": ".200",
      "mainLabel": "PCT",
-     "streak": "W1",
+     "streak": "L1",
      "seed": 13,
      "mine": false,
      "status": "out",
@@ -317,14 +317,14 @@
      "name": "Suns",
      "abbr": "PHX",
      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/phx.png",
-     "record": "3-6",
-     "main": ".333",
+     "record": "4-6",
+     "main": ".400",
      "mainLabel": "PCT",
-     "streak": "L1",
-     "seed": 12,
+     "streak": "W1",
+     "seed": 11,
      "mine": false,
      "status": "out",
-     "rank": 12
+     "rank": 11
     },
     "9": {
      "id": "9",
@@ -335,10 +335,10 @@
      "main": ".727",
      "mainLabel": "PCT",
      "streak": "W8",
-     "seed": 4,
+     "seed": 5,
      "mine": false,
      "status": "in",
-     "rank": 4
+     "rank": 5
     },
     "13": {
      "id": "13",
@@ -363,10 +363,10 @@
      "main": ".364",
      "mainLabel": "PCT",
      "streak": "L3",
-     "seed": 11,
+     "seed": 12,
      "mine": false,
      "status": "out",
-     "rank": 11
+     "rank": 12
     },
     "6": {
      "id": "6",
@@ -405,10 +405,10 @@
      "main": ".727",
      "mainLabel": "PCT",
      "streak": "W1",
-     "seed": 6,
+     "seed": 4,
      "mine": false,
      "status": "in",
-     "rank": 6
+     "rank": 4
     },
     "24": {
      "id": "24",
@@ -467,12 +467,12 @@
       "18",
       "1",
       "28",
-      "5",
       "14",
+      "5",
       "30",
       "27",
-      "11",
       "19",
+      "11",
       "17",
       "4",
       "15"
@@ -488,8 +488,8 @@
       {
        "name": "Northwest",
        "ids": [
-        "25",
         "16",
+        "25",
         "22",
         "7",
         "26"
@@ -519,16 +519,16 @@
      "order": [
       "13",
       "24",
-      "25",
-      "9",
       "16",
       "10",
+      "9",
+      "25",
       "29",
       "22",
       "6",
       "7",
-      "3",
       "21",
+      "3",
       "12",
       "23",
       "26"
@@ -796,6 +796,20 @@
      "status": "div",
      "rank": 4
     },
+    "27": {
+     "id": "27",
+     "name": "Predators",
+     "abbr": "NSH",
+     "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/nsh.png",
+     "record": "9-4-5",
+     "main": "23",
+     "mainLabel": "PTS",
+     "streak": "W5",
+     "seed": 5,
+     "mine": false,
+     "status": "div",
+     "rank": 5
+    },
     "9": {
      "id": "9",
      "name": "Stars",
@@ -805,20 +819,6 @@
      "main": "22",
      "mainLabel": "PTS",
      "streak": "W1",
-     "seed": 5,
-     "mine": false,
-     "status": "div",
-     "rank": 5
-    },
-    "27": {
-     "id": "27",
-     "name": "Predators",
-     "abbr": "NSH",
-     "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/nsh.png",
-     "record": "8-4-5",
-     "main": "21",
-     "mainLabel": "PTS",
-     "streak": "W4",
      "seed": 6,
      "mine": false,
      "status": "wc",
@@ -969,10 +969,10 @@
      "name": "Kings",
      "abbr": "LA",
      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/la.png",
-     "record": "5-8-2",
+     "record": "5-9-2",
      "main": "12",
      "mainLabel": "PTS",
-     "streak": "L1",
+     "streak": "L2",
      "seed": 14,
      "mine": false,
      "status": "out",
@@ -1054,8 +1054,8 @@
        "ids": [
         "30",
         "17",
-        "9",
         "27",
+        "9",
         "129764",
         "28",
         "19",
@@ -1081,8 +1081,8 @@
       "6",
       "37",
       "17",
-      "9",
       "27",
+      "9",
       "25",
       "129764",
       "124292",
@@ -1681,5 +1681,5 @@
    ]
   }
  ],
- "updated": "2026-11-11T04:10Z"
+ "updated": "2026-11-11T11:55Z"
 }
