@@ -9,6 +9,16 @@
       "color": "#4e008e",
       "recent": [
         {
+          "id": "401909973",
+          "date": "2026-11-12T02:00Z",
+          "home": true,
+          "opponent": "Orlando Magic",
+          "opponentAbbr": "ORL",
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/orl.png",
+          "state": "final",
+          "result": "L"
+        },
+        {
           "id": "401909963",
           "date": "2026-11-11T02:00Z",
           "home": true,
@@ -27,32 +37,9 @@
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/min.png",
           "state": "final",
           "result": "L"
-        },
-        {
-          "id": "401909290",
-          "date": "2026-11-07T01:00Z",
-          "home": false,
-          "opponent": "Dallas Mavericks",
-          "opponentAbbr": "DAL",
-          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/dal.png",
-          "state": "final",
-          "result": "L"
         }
       ],
       "upcoming": [
-        {
-          "id": "401909973",
-          "date": "2026-11-12T02:00Z",
-          "home": true,
-          "opponent": "Orlando Magic",
-          "opponentAbbr": "ORL",
-          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/orl.png",
-          "state": "upcoming",
-          "tv": [
-            "KJZZ-TV",
-            "Jazz+"
-          ]
-        },
         {
           "id": "401909301",
           "date": "2026-11-14T01:30Z",
@@ -78,6 +65,15 @@
             "KJZZ-TV",
             "Jazz+"
           ]
+        },
+        {
+          "id": "401910006",
+          "date": "2026-11-18T03:30Z",
+          "home": false,
+          "opponent": "LA Clippers",
+          "opponentAbbr": "LAC",
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/lac.png",
+          "state": "upcoming"
         }
       ]
     },
@@ -168,6 +164,16 @@
       "color": "#000000",
       "recent": [
         {
+          "id": "401892693",
+          "date": "2026-11-12T02:30Z",
+          "home": false,
+          "opponent": "Vegas Golden Knights",
+          "opponentAbbr": "VGK",
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/vgk.png",
+          "state": "final",
+          "result": "L"
+        },
+        {
           "id": "401892666",
           "date": "2026-11-08T00:00Z",
           "home": false,
@@ -186,32 +192,9 @@
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/mtl.png",
           "state": "final",
           "result": "OTL"
-        },
-        {
-          "id": "401892633",
-          "date": "2026-11-04T00:00Z",
-          "home": false,
-          "opponent": "Toronto Maple Leafs",
-          "opponentAbbr": "TOR",
-          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/tor.png",
-          "state": "final",
-          "result": "W"
         }
       ],
       "upcoming": [
-        {
-          "id": "401892693",
-          "date": "2026-11-12T02:30Z",
-          "home": false,
-          "opponent": "Vegas Golden Knights",
-          "opponentAbbr": "VGK",
-          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/vgk.png",
-          "state": "upcoming",
-          "tv": [
-            "TNT",
-            "truTV"
-          ]
-        },
         {
           "id": "401892704",
           "date": "2026-11-13T02:00Z",
@@ -233,6 +216,20 @@
           "opponent": "San Jose Sharks",
           "opponentAbbr": "SJ",
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/sj.png",
+          "state": "upcoming",
+          "tv": [
+            "ESPN+",
+            "Utah 16",
+            "Mammoth+"
+          ]
+        },
+        {
+          "id": "401892727",
+          "date": "2026-11-17T02:30Z",
+          "home": true,
+          "opponent": "Vancouver Canucks",
+          "opponentAbbr": "VAN",
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/van.png",
           "state": "upcoming",
           "tv": [
             "ESPN+",
@@ -393,5 +390,5 @@
       ]
     }
   ],
-  "updated": "2026-11-11T19:08Z"
+  "updated": "2026-11-12T08:45Z"
 }
