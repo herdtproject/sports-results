@@ -164,6 +164,16 @@
       "color": "#000000",
       "recent": [
         {
+          "id": "401892704",
+          "date": "2026-11-13T02:00Z",
+          "home": true,
+          "opponent": "St. Louis Blues",
+          "opponentAbbr": "STL",
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/stl.png",
+          "state": "final",
+          "result": "OTL"
+        },
+        {
           "id": "401892693",
           "date": "2026-11-12T02:30Z",
           "home": false,
@@ -182,35 +192,9 @@
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/ott.png",
           "state": "final",
           "result": "L"
-        },
-        {
-          "id": "401892648",
-          "date": "2026-11-06T00:00Z",
-          "home": false,
-          "opponent": "Montreal Canadiens",
-          "opponentAbbr": "MTL",
-          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/mtl.png",
-          "state": "final",
-          "result": "OTL"
         }
       ],
       "upcoming": [
-        {
-          "id": "401892704",
-          "date": "2026-11-13T02:00Z",
-          "home": true,
-          "opponent": "St. Louis Blues",
-          "opponentAbbr": "STL",
-          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/stl.png",
-          "state": "live",
-          "period": "P1",
-          "tv": [
-            "ESPN+",
-            "Utah 16",
-            "Mammoth+"
-          ],
-          "worthWatching": true
-        },
         {
           "id": "401892718",
           "date": "2026-11-15T02:00Z",
@@ -237,6 +221,21 @@
             "ESPN+",
             "Utah 16",
             "Mammoth+"
+          ]
+        },
+        {
+          "id": "401892741",
+          "date": "2026-11-19T03:00Z",
+          "home": true,
+          "opponent": "Colorado Avalanche",
+          "opponentAbbr": "COL",
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/col.png",
+          "state": "upcoming",
+          "tv": [
+            "TNT",
+            "Utah 16",
+            "Mammoth+",
+            "Altitude Sports"
           ]
         }
       ]
@@ -322,6 +321,16 @@
       "color": "#0047ba",
       "recent": [
         {
+          "id": "401921741",
+          "date": "2026-11-13T02:00Z",
+          "home": true,
+          "opponent": "Montana State Bobcats",
+          "opponentAbbr": "MTST",
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/147.png",
+          "state": "final",
+          "result": "W"
+        },
+        {
           "id": "401921740",
           "date": "2026-11-11T02:00Z",
           "home": true,
@@ -340,33 +349,9 @@
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2437.png",
           "state": "final",
           "result": "W"
-        },
-        {
-          "id": "401916313",
-          "date": "2026-11-03T02:00Z",
-          "home": true,
-          "opponent": "Ohio State Buckeyes",
-          "opponentAbbr": "OSU",
-          "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/194.png",
-          "state": "final",
-          "result": "W"
         }
       ],
       "upcoming": [
-        {
-          "id": "401921741",
-          "date": "2026-11-13T02:00Z",
-          "home": true,
-          "opponent": "Montana State Bobcats",
-          "opponentAbbr": "MTST",
-          "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/147.png",
-          "state": "live",
-          "period": "H1",
-          "tv": [
-            "ESPN+"
-          ],
-          "worthWatching": false
-        },
         {
           "id": "401921742",
           "date": "2026-11-19T02:00Z",
@@ -390,9 +375,21 @@
           "tv": [
             "ESPN2"
           ]
+        },
+        {
+          "id": "401920738",
+          "date": "2026-12-05T21:00Z",
+          "home": true,
+          "opponent": "Northwestern Wildcats",
+          "opponentAbbr": "NU",
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/77.png",
+          "state": "upcoming",
+          "tv": [
+            "Peacock"
+          ]
         }
       ]
     }
   ],
-  "updated": "2026-11-13T02:57Z"
+  "updated": "2026-11-13T10:37Z"
 }
