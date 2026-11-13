@@ -202,12 +202,14 @@
           "opponent": "St. Louis Blues",
           "opponentAbbr": "STL",
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/stl.png",
-          "state": "upcoming",
+          "state": "live",
+          "period": "P1",
           "tv": [
             "ESPN+",
             "Utah 16",
             "Mammoth+"
-          ]
+          ],
+          "worthWatching": true
         },
         {
           "id": "401892718",
@@ -358,10 +360,12 @@
           "opponent": "Montana State Bobcats",
           "opponentAbbr": "MTST",
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/147.png",
-          "state": "upcoming",
+          "state": "live",
+          "period": "H1",
           "tv": [
             "ESPN+"
-          ]
+          ],
+          "worthWatching": false
         },
         {
           "id": "401921742",
@@ -390,5 +394,5 @@
       ]
     }
   ],
-  "updated": "2026-11-12T08:45Z"
+  "updated": "2026-11-13T02:57Z"
 }
