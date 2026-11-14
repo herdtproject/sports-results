@@ -37,14 +37,14 @@
      "name": "Knicks",
      "abbr": "NY",
      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/ny.png",
-     "record": "6-5",
-     "main": ".545",
+     "record": "6-6",
+     "main": ".500",
      "mainLabel": "PCT",
-     "streak": "L1",
-     "seed": 5,
+     "streak": "L2",
+     "seed": 6,
      "mine": false,
      "status": "in",
-     "rank": 5
+     "rank": 6
     },
     "20": {
      "id": "20",
@@ -79,10 +79,10 @@
      "name": "Bucks",
      "abbr": "MIL",
      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/mil.png",
-     "record": "1-11",
-     "main": ".083",
+     "record": "1-12",
+     "main": ".077",
      "mainLabel": "PCT",
-     "streak": "L8",
+     "streak": "L9",
      "seed": 15,
      "mine": false,
      "status": "out",
@@ -107,14 +107,14 @@
      "name": "Pacers",
      "abbr": "IND",
      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/ind.png",
-     "record": "4-8",
-     "main": ".333",
+     "record": "5-8",
+     "main": ".385",
      "mainLabel": "PCT",
-     "streak": "W1",
-     "seed": 11,
+     "streak": "W2",
+     "seed": 10,
      "mine": false,
-     "status": "out",
-     "rank": 11
+     "status": "playin",
+     "rank": 10
     },
     "5": {
      "id": "5",
@@ -125,10 +125,10 @@
      "main": ".500",
      "mainLabel": "PCT",
      "streak": "W1",
-     "seed": 6,
+     "seed": 5,
      "mine": false,
      "status": "in",
-     "rank": 6
+     "rank": 5
     },
     "8": {
      "id": "8",
@@ -167,20 +167,20 @@
      "main": ".333",
      "mainLabel": "PCT",
      "streak": "L1",
-     "seed": 10,
+     "seed": 11,
      "mine": false,
-     "status": "playin",
-     "rank": 10
+     "status": "out",
+     "rank": 11
     },
     "19": {
      "id": "19",
      "name": "Magic",
      "abbr": "ORL",
      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/orl.png",
-     "record": "4-7",
-     "main": ".364",
+     "record": "5-7",
+     "main": ".417",
      "mainLabel": "PCT",
-     "streak": "W2",
+     "streak": "W3",
      "seed": 9,
      "mine": false,
      "status": "playin",
@@ -465,13 +465,13 @@
       "20",
       "8",
       "1",
-      "18",
       "5",
+      "18",
       "14",
       "28",
       "19",
-      "30",
       "11",
+      "30",
       "27",
       "17",
       "4",
@@ -1681,5 +1681,5 @@
    ]
   }
  ],
- "updated": "2026-11-13T10:37Z"
+ "updated": "2026-11-14T03:28Z"
 }

@@ -47,11 +47,13 @@
           "opponent": "Houston Rockets",
           "opponentAbbr": "HOU",
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/hou.png",
-          "state": "upcoming",
+          "state": "live",
+          "period": "Q3",
           "tv": [
             "KJZZ-TV",
             "Jazz+"
-          ]
+          ],
+          "worthWatching": true
         },
         {
           "id": "401909988",
@@ -391,5 +393,5 @@
       ]
     }
   ],
-  "updated": "2026-11-13T10:37Z"
+  "updated": "2026-11-14T03:28Z"
 }
