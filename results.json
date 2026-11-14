@@ -9,6 +9,16 @@
       "color": "#4e008e",
       "recent": [
         {
+          "id": "401909301",
+          "date": "2026-11-14T01:30Z",
+          "home": false,
+          "opponent": "Houston Rockets",
+          "opponentAbbr": "HOU",
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/hou.png",
+          "state": "final",
+          "result": "L"
+        },
+        {
           "id": "401909973",
           "date": "2026-11-12T02:00Z",
           "home": true,
@@ -27,34 +37,9 @@
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/mia.png",
           "state": "final",
           "result": "L"
-        },
-        {
-          "id": "401909947",
-          "date": "2026-11-09T00:00Z",
-          "home": false,
-          "opponent": "Minnesota Timberwolves",
-          "opponentAbbr": "MIN",
-          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/min.png",
-          "state": "final",
-          "result": "L"
         }
       ],
       "upcoming": [
-        {
-          "id": "401909301",
-          "date": "2026-11-14T01:30Z",
-          "home": false,
-          "opponent": "Houston Rockets",
-          "opponentAbbr": "HOU",
-          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/hou.png",
-          "state": "live",
-          "period": "Q3",
-          "tv": [
-            "KJZZ-TV",
-            "Jazz+"
-          ],
-          "worthWatching": true
-        },
         {
           "id": "401909988",
           "date": "2026-11-15T22:00Z",
@@ -76,6 +61,19 @@
           "opponentAbbr": "LAC",
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/lac.png",
           "state": "upcoming"
+        },
+        {
+          "id": "401910017",
+          "date": "2026-11-19T03:00Z",
+          "home": false,
+          "opponent": "Los Angeles Lakers",
+          "opponentAbbr": "LAL",
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/lal.png",
+          "state": "upcoming",
+          "tv": [
+            "KJZZ-TV",
+            "Jazz+"
+          ]
         }
       ]
     },
@@ -284,7 +282,7 @@
       "upcoming": [
         {
           "id": "401856858",
-          "date": "2026-11-14T20:30Z",
+          "date": "2026-11-15T00:00Z",
           "home": true,
           "opponent": "Baylor Bears",
           "opponentAbbr": "BAY",
@@ -393,5 +391,5 @@
       ]
     }
   ],
-  "updated": "2026-11-14T03:28Z"
+  "updated": "2026-11-14T10:47Z"
 }
