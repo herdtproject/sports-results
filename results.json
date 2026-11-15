@@ -47,11 +47,13 @@
           "opponent": "San Antonio Spurs",
           "opponentAbbr": "SA",
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/sa.png",
-          "state": "upcoming",
+          "state": "live",
+          "period": "Q4",
           "tv": [
             "KJZZ-TV",
             "Jazz+"
-          ]
+          ],
+          "worthWatching": true
         },
         {
           "id": "401910006",
@@ -86,6 +88,16 @@
       "color": "#00338d",
       "recent": [
         {
+          "id": "401873054",
+          "date": "2026-11-15T18:00Z",
+          "home": false,
+          "opponent": "New York Jets",
+          "opponentAbbr": "NYJ",
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/nyj.png",
+          "state": "final",
+          "result": "W"
+        },
+        {
           "id": "401873051",
           "date": "2026-11-10T01:15Z",
           "home": false,
@@ -104,33 +116,9 @@
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/bal.png",
           "state": "final",
           "result": "W"
-        },
-        {
-          "id": "401873005",
-          "date": "2026-10-18T20:25Z",
-          "home": false,
-          "opponent": "Las Vegas Raiders",
-          "opponentAbbr": "LV",
-          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/lv.png",
-          "state": "final",
-          "result": "W"
         }
       ],
       "upcoming": [
-        {
-          "id": "401873054",
-          "date": "2026-11-15T18:00Z",
-          "home": false,
-          "opponent": "New York Jets",
-          "opponentAbbr": "NYJ",
-          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/nyj.png",
-          "state": "live",
-          "period": "Q3",
-          "tv": [
-            "CBS"
-          ],
-          "worthWatching": false
-        },
         {
           "id": "401873070",
           "date": "2026-11-22T18:00Z",
@@ -153,6 +141,18 @@
           "state": "upcoming",
           "tv": [
             "NBC"
+          ]
+        },
+        {
+          "id": "401873105",
+          "date": "2026-12-06T21:25Z",
+          "home": false,
+          "opponent": "New England Patriots",
+          "opponentAbbr": "NE",
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/ne.png",
+          "state": "upcoming",
+          "tv": [
+            "CBS"
           ]
         }
       ]
@@ -384,5 +384,5 @@
       ]
     }
   ],
-  "updated": "2026-11-15T20:05Z"
+  "updated": "2026-11-15T23:56Z"
 }
