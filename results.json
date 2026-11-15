@@ -164,6 +164,16 @@
       "color": "#000000",
       "recent": [
         {
+          "id": "401892718",
+          "date": "2026-11-15T02:00Z",
+          "home": true,
+          "opponent": "San Jose Sharks",
+          "opponentAbbr": "SJ",
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/sj.png",
+          "state": "final",
+          "result": "OTL"
+        },
+        {
           "id": "401892704",
           "date": "2026-11-13T02:00Z",
           "home": true,
@@ -182,33 +192,9 @@
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/vgk.png",
           "state": "final",
           "result": "L"
-        },
-        {
-          "id": "401892666",
-          "date": "2026-11-08T00:00Z",
-          "home": false,
-          "opponent": "Ottawa Senators",
-          "opponentAbbr": "OTT",
-          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/ott.png",
-          "state": "final",
-          "result": "L"
         }
       ],
       "upcoming": [
-        {
-          "id": "401892718",
-          "date": "2026-11-15T02:00Z",
-          "home": true,
-          "opponent": "San Jose Sharks",
-          "opponentAbbr": "SJ",
-          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/sj.png",
-          "state": "upcoming",
-          "tv": [
-            "ESPN+",
-            "Utah 16",
-            "Mammoth+"
-          ]
-        },
         {
           "id": "401892727",
           "date": "2026-11-17T02:30Z",
@@ -237,6 +223,20 @@
             "Mammoth+",
             "Altitude Sports"
           ]
+        },
+        {
+          "id": "401892765",
+          "date": "2026-11-22T02:00Z",
+          "home": true,
+          "opponent": "Anaheim Ducks",
+          "opponentAbbr": "ANA",
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/ana.png",
+          "state": "upcoming",
+          "tv": [
+            "ESPN+",
+            "Utah 16",
+            "Mammoth+"
+          ]
         }
       ]
     },
@@ -248,6 +248,16 @@
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/252.png",
       "color": "#0047ba",
       "recent": [
+        {
+          "id": "401856858",
+          "date": "2026-11-15T00:00Z",
+          "home": true,
+          "opponent": "Baylor Bears",
+          "opponentAbbr": "BAY",
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/239.png",
+          "state": "final",
+          "result": "W"
+        },
         {
           "id": "401856849",
           "date": "2026-11-07T17:00Z",
@@ -267,33 +277,9 @@
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/9.png",
           "state": "final",
           "result": "W"
-        },
-        {
-          "id": "401856835",
-          "date": "2026-10-24T19:30Z",
-          "home": false,
-          "opponent": "UCF Knights",
-          "opponentAbbr": "UCF",
-          "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2116.png",
-          "state": "final",
-          "result": "L"
         }
       ],
       "upcoming": [
-        {
-          "id": "401856858",
-          "date": "2026-11-15T00:00Z",
-          "home": true,
-          "opponent": "Baylor Bears",
-          "opponentAbbr": "BAY",
-          "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/239.png",
-          "state": "live",
-          "period": "Q2",
-          "tv": [
-            "Fox"
-          ],
-          "worthWatching": false
-        },
         {
           "id": "401856866",
           "date": "2026-11-21T05:00Z",
@@ -393,5 +379,5 @@
       ]
     }
   ],
-  "updated": "2026-11-15T00:47Z"
+  "updated": "2026-11-15T07:16Z"
 }
