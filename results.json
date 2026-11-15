@@ -287,10 +287,12 @@
           "opponent": "Baylor Bears",
           "opponentAbbr": "BAY",
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/239.png",
-          "state": "upcoming",
+          "state": "live",
+          "period": "Q2",
           "tv": [
             "Fox"
-          ]
+          ],
+          "worthWatching": false
         },
         {
           "id": "401856866",
@@ -391,5 +393,5 @@
       ]
     }
   ],
-  "updated": "2026-11-14T10:47Z"
+  "updated": "2026-11-15T00:47Z"
 }
