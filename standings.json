@@ -1123,14 +1123,14 @@
      "name": "Patriots",
      "abbr": "NE",
      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/ne.png",
-     "record": "5-4",
-     "main": ".556",
+     "record": "5-5",
+     "main": ".500",
      "mainLabel": "PCT",
-     "streak": "L1",
-     "seed": 7,
+     "streak": "L2",
+     "seed": 8,
      "mine": false,
-     "status": "wc",
-     "rank": 7
+     "status": "out",
+     "rank": 8
     },
     "20": {
      "id": "20",
@@ -1197,10 +1197,10 @@
      "main": ".556",
      "mainLabel": "PCT",
      "streak": "L2",
-     "seed": 8,
+     "seed": 7,
      "mine": false,
-     "status": "out",
-     "rank": 8
+     "status": "wc",
+     "rank": 7
     },
     "33": {
      "id": "33",
@@ -1384,6 +1384,20 @@
      "status": "out",
      "rank": 16
     },
+    "8": {
+     "id": "8",
+     "name": "Lions",
+     "abbr": "DET",
+     "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/det.png",
+     "record": "7-2",
+     "main": ".778",
+     "mainLabel": "PCT",
+     "streak": "W5",
+     "seed": 2,
+     "mine": false,
+     "status": "div",
+     "rank": 2
+    },
     "3": {
      "id": "3",
      "name": "Bears",
@@ -1391,20 +1405,6 @@
      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/chi.png",
      "record": "7-2",
      "main": ".778",
-     "mainLabel": "PCT",
-     "streak": "W4",
-     "seed": 2,
-     "mine": false,
-     "status": "div",
-     "rank": 2
-    },
-    "8": {
-     "id": "8",
-     "name": "Lions",
-     "abbr": "DET",
-     "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/det.png",
-     "record": "6-2",
-     "main": ".750",
      "mainLabel": "PCT",
      "streak": "W4",
      "seed": 5,
@@ -1601,8 +1601,8 @@
       "23",
       "12",
       "4",
-      "17",
       "5",
+      "17",
       "13",
       "33",
       "34",
@@ -1631,8 +1631,8 @@
       {
        "name": "North",
        "ids": [
-        "3",
         "8",
+        "3",
         "16",
         "9"
        ]
@@ -1658,10 +1658,10 @@
      ],
      "order": [
       "25",
-      "3",
+      "8",
       "19",
       "29",
-      "8",
+      "3",
       "16",
       "9",
       "26",
@@ -1681,5 +1681,5 @@
    ]
   }
  ],
- "updated": "2026-11-15T07:16Z"
+ "updated": "2026-11-15T20:05Z"
 }
