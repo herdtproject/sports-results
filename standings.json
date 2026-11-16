@@ -899,10 +899,10 @@
      "name": "Golden Knights",
      "abbr": "VGK",
      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/vgk.png",
-     "record": "13-5-3",
+     "record": "13-6-3",
      "main": "29",
      "mainLabel": "PTS",
-     "streak": "L1",
+     "streak": "L2",
      "seed": 3,
      "mine": false,
      "status": "div",
@@ -983,10 +983,10 @@
      "name": "Canucks",
      "abbr": "VAN",
      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/van.png",
-     "record": "3-17-1",
-     "main": "7",
+     "record": "4-17-1",
+     "main": "9",
      "mainLabel": "PTS",
-     "streak": "L7",
+     "streak": "W1",
      "seed": 16,
      "mine": false,
      "status": "out",
@@ -1681,5 +1681,5 @@
    ]
   }
  ],
- "updated": "2026-11-16T04:43Z"
+ "updated": "2026-11-16T13:10Z"
 }
