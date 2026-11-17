@@ -202,12 +202,14 @@
           "opponent": "Vancouver Canucks",
           "opponentAbbr": "VAN",
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/van.png",
-          "state": "upcoming",
+          "state": "live",
+          "period": "P3",
           "tv": [
             "ESPN+",
             "Utah 16",
             "Mammoth+"
-          ]
+          ],
+          "worthWatching": false
         },
         {
           "id": "401892741",
@@ -294,7 +296,7 @@
         },
         {
           "id": "401856876",
-          "date": "2026-11-28T05:00Z",
+          "date": "2026-11-28T20:30Z",
           "home": true,
           "opponent": "Cincinnati Bearcats",
           "opponentAbbr": "CIN",
@@ -382,5 +384,5 @@
       ]
     }
   ],
-  "updated": "2026-11-16T04:43Z"
+  "updated": "2026-11-17T04:55Z"
 }
