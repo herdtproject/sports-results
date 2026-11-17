@@ -299,7 +299,10 @@
           "opponent": "Cincinnati Bearcats",
           "opponentAbbr": "CIN",
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2132.png",
-          "state": "upcoming"
+          "state": "upcoming",
+          "tv": [
+            "Fox"
+          ]
         }
       ]
     },
@@ -382,5 +385,5 @@
       ]
     }
   ],
-  "updated": "2026-11-17T14:02Z"
+  "updated": "2026-11-17T22:13Z"
 }
