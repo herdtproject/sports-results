@@ -9,6 +9,16 @@
       "color": "#4e008e",
       "recent": [
         {
+          "id": "401910006",
+          "date": "2026-11-18T03:30Z",
+          "home": false,
+          "opponent": "LA Clippers",
+          "opponentAbbr": "LAC",
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/lac.png",
+          "state": "final",
+          "result": "W"
+        },
+        {
           "id": "401909988",
           "date": "2026-11-15T22:00Z",
           "home": true,
@@ -27,30 +37,9 @@
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/hou.png",
           "state": "final",
           "result": "L"
-        },
-        {
-          "id": "401909973",
-          "date": "2026-11-12T02:00Z",
-          "home": true,
-          "opponent": "Orlando Magic",
-          "opponentAbbr": "ORL",
-          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/orl.png",
-          "state": "final",
-          "result": "L"
         }
       ],
       "upcoming": [
-        {
-          "id": "401910006",
-          "date": "2026-11-18T03:30Z",
-          "home": false,
-          "opponent": "LA Clippers",
-          "opponentAbbr": "LAC",
-          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/lac.png",
-          "state": "live",
-          "period": "Q1",
-          "worthWatching": true
-        },
         {
           "id": "401910017",
           "date": "2026-11-19T03:00Z",
@@ -71,6 +60,19 @@
           "opponent": "Phoenix Suns",
           "opponentAbbr": "PHX",
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/phx.png",
+          "state": "upcoming",
+          "tv": [
+            "KJZZ-TV",
+            "Jazz+"
+          ]
+        },
+        {
+          "id": "401910033",
+          "date": "2026-11-23T00:00Z",
+          "home": true,
+          "opponent": "Dallas Mavericks",
+          "opponentAbbr": "DAL",
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/dal.png",
           "state": "upcoming",
           "tv": [
             "KJZZ-TV",
@@ -387,5 +389,5 @@
       ]
     }
   ],
-  "updated": "2026-11-18T03:43Z"
+  "updated": "2026-11-18T12:18Z"
 }
