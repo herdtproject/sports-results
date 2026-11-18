@@ -61,12 +61,13 @@ def logo(team):
 
 def worth_watching(league, mine, theirs):
     """The "worth watching" rules, applied to the live score.
-    Basketball / football: within 7 points either way. Hockey: winning or tied."""
+    Basketball / football: winning by any amount, or losing by less than 8.
+    Hockey: winning or tied."""
     margin = mine - theirs
     if league == "NHL":
         return margin >= 0
     if league in ("NBA", "NFL", "NCAAF", "NCAAB"):
-        return abs(margin) < 8
+        return margin > -8
     return None
 
 

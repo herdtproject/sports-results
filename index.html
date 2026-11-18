@@ -123,8 +123,8 @@
   <div id="rules" hidden>
     <p>When on, a game in progress is flagged “Currently worth watching” if:</p>
     <ul>
-      <li><b>Basketball:</b> the team is winning or losing by less than 8 points</li>
-      <li><b>Football:</b> the team is winning or losing by less than 8 points</li>
+      <li><b>Basketball:</b> the team is winning, or losing by less than 8 points</li>
+      <li><b>Football:</b> the team is winning, or losing by less than 8 points</li>
       <li><b>Hockey:</b> the team is winning or tied</li>
     </ul>
     <p>Games in progress update by themselves every 30 seconds. The score is used only to check these rules and is never shown. Off by default.</p>
@@ -235,7 +235,7 @@
   function worthWatching(league, mine, theirs) {
     var margin = mine - theirs;
     if (league === "NHL") return margin >= 0;
-    return Math.abs(margin) < 8;
+    return margin > -8;  // winning by any amount, or losing by less than 8
   }
   function targets() {
     var out = [], now = Date.now();
