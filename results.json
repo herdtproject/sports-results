@@ -47,7 +47,9 @@
           "opponent": "LA Clippers",
           "opponentAbbr": "LAC",
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/lac.png",
-          "state": "upcoming"
+          "state": "live",
+          "period": "Q1",
+          "worthWatching": true
         },
         {
           "id": "401910017",
@@ -385,5 +387,5 @@
       ]
     }
   ],
-  "updated": "2026-11-17T22:13Z"
+  "updated": "2026-11-18T03:43Z"
 }
