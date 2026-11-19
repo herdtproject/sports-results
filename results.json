@@ -357,10 +357,12 @@
           "opponent": "Northern Colorado Bears",
           "opponentAbbr": "UNCO",
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2458.png",
-          "state": "upcoming",
+          "state": "live",
+          "period": "H1",
           "tv": [
             "ESPN+"
-          ]
+          ],
+          "worthWatching": true
         },
         {
           "id": "401921708",
@@ -389,5 +391,5 @@
       ]
     }
   ],
-  "updated": "2026-11-18T12:18Z"
+  "updated": "2026-11-19T02:02Z"
 }
