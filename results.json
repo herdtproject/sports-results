@@ -9,6 +9,16 @@
       "color": "#4e008e",
       "recent": [
         {
+          "id": "401910017",
+          "date": "2026-11-19T03:00Z",
+          "home": false,
+          "opponent": "Los Angeles Lakers",
+          "opponentAbbr": "LAL",
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/lal.png",
+          "state": "final",
+          "result": "W"
+        },
+        {
           "id": "401910006",
           "date": "2026-11-18T03:30Z",
           "home": false,
@@ -27,32 +37,9 @@
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/sa.png",
           "state": "final",
           "result": "L"
-        },
-        {
-          "id": "401909301",
-          "date": "2026-11-14T01:30Z",
-          "home": false,
-          "opponent": "Houston Rockets",
-          "opponentAbbr": "HOU",
-          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/hou.png",
-          "state": "final",
-          "result": "L"
         }
       ],
       "upcoming": [
-        {
-          "id": "401910017",
-          "date": "2026-11-19T03:00Z",
-          "home": false,
-          "opponent": "Los Angeles Lakers",
-          "opponentAbbr": "LAL",
-          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/lal.png",
-          "state": "upcoming",
-          "tv": [
-            "KJZZ-TV",
-            "Jazz+"
-          ]
-        },
         {
           "id": "401909311",
           "date": "2026-11-21T02:30Z",
@@ -75,6 +62,20 @@
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/dal.png",
           "state": "upcoming",
           "tv": [
+            "KJZZ-TV",
+            "Jazz+"
+          ]
+        },
+        {
+          "id": "401910044",
+          "date": "2026-11-24T03:00Z",
+          "home": false,
+          "opponent": "Los Angeles Lakers",
+          "opponentAbbr": "LAL",
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/lal.png",
+          "state": "upcoming",
+          "tv": [
+            "NBA TV",
             "KJZZ-TV",
             "Jazz+"
           ]
@@ -168,6 +169,16 @@
       "color": "#000000",
       "recent": [
         {
+          "id": "401892741",
+          "date": "2026-11-19T03:00Z",
+          "home": true,
+          "opponent": "Colorado Avalanche",
+          "opponentAbbr": "COL",
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/col.png",
+          "state": "final",
+          "result": "W"
+        },
+        {
           "id": "401892727",
           "date": "2026-11-17T02:30Z",
           "home": true,
@@ -186,34 +197,9 @@
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/sj.png",
           "state": "final",
           "result": "OTL"
-        },
-        {
-          "id": "401892704",
-          "date": "2026-11-13T02:00Z",
-          "home": true,
-          "opponent": "St. Louis Blues",
-          "opponentAbbr": "STL",
-          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/stl.png",
-          "state": "final",
-          "result": "OTL"
         }
       ],
       "upcoming": [
-        {
-          "id": "401892741",
-          "date": "2026-11-19T03:00Z",
-          "home": true,
-          "opponent": "Colorado Avalanche",
-          "opponentAbbr": "COL",
-          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/col.png",
-          "state": "upcoming",
-          "tv": [
-            "TNT",
-            "Utah 16",
-            "Mammoth+",
-            "Altitude Sports"
-          ]
-        },
         {
           "id": "401892765",
           "date": "2026-11-22T02:00Z",
@@ -235,6 +221,20 @@
           "opponent": "Winnipeg Jets",
           "opponentAbbr": "WPG",
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/wpg.png",
+          "state": "upcoming",
+          "tv": [
+            "ESPN+",
+            "Utah 16",
+            "Mammoth+"
+          ]
+        },
+        {
+          "id": "401892791",
+          "date": "2026-11-26T01:00Z",
+          "home": false,
+          "opponent": "Minnesota Wild",
+          "opponentAbbr": "MIN",
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/min.png",
           "state": "upcoming",
           "tv": [
             "ESPN+",
@@ -319,6 +319,16 @@
       "color": "#0047ba",
       "recent": [
         {
+          "id": "401921742",
+          "date": "2026-11-19T02:00Z",
+          "home": true,
+          "opponent": "Northern Colorado Bears",
+          "opponentAbbr": "UNCO",
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2458.png",
+          "state": "final",
+          "result": "W"
+        },
+        {
           "id": "401921741",
           "date": "2026-11-13T02:00Z",
           "home": true,
@@ -337,33 +347,9 @@
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2511.png",
           "state": "final",
           "result": "W"
-        },
-        {
-          "id": "401921739",
-          "date": "2026-11-07T02:00Z",
-          "home": true,
-          "opponent": "Omaha Mavericks",
-          "opponentAbbr": "OMA",
-          "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2437.png",
-          "state": "final",
-          "result": "W"
         }
       ],
       "upcoming": [
-        {
-          "id": "401921742",
-          "date": "2026-11-19T02:00Z",
-          "home": true,
-          "opponent": "Northern Colorado Bears",
-          "opponentAbbr": "UNCO",
-          "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2458.png",
-          "state": "live",
-          "period": "H1",
-          "tv": [
-            "ESPN+"
-          ],
-          "worthWatching": true
-        },
         {
           "id": "401921708",
           "date": "2026-11-23T22:00Z",
@@ -387,9 +373,21 @@
           "tv": [
             "Peacock"
           ]
+        },
+        {
+          "id": "401921743",
+          "date": "2026-12-10T03:00Z",
+          "home": true,
+          "opponent": "Utah State Aggies",
+          "opponentAbbr": "USU",
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/328.png",
+          "state": "upcoming",
+          "tv": [
+            "FS1"
+          ]
         }
       ]
     }
   ],
-  "updated": "2026-11-19T02:02Z"
+  "updated": "2026-11-19T10:11Z"
 }
