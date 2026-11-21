@@ -47,11 +47,13 @@
           "opponent": "Phoenix Suns",
           "opponentAbbr": "PHX",
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/phx.png",
-          "state": "upcoming",
+          "state": "live",
+          "period": "Q2",
           "tv": [
             "KJZZ-TV",
             "Jazz+"
-          ]
+          ],
+          "worthWatching": false
         },
         {
           "id": "401910033",
@@ -389,5 +391,5 @@
       ]
     }
   ],
-  "updated": "2026-11-19T10:11Z"
+  "updated": "2026-11-21T03:55Z"
 }
