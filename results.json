@@ -253,6 +253,16 @@
       "color": "#0047ba",
       "recent": [
         {
+          "id": "401856866",
+          "date": "2026-11-21T17:00Z",
+          "home": false,
+          "opponent": "Kansas Jayhawks",
+          "opponentAbbr": "KU",
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2305.png",
+          "state": "final",
+          "result": "W"
+        },
+        {
           "id": "401856858",
           "date": "2026-11-15T00:00Z",
           "home": true,
@@ -271,33 +281,9 @@
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/254.png",
           "state": "final",
           "result": "L"
-        },
-        {
-          "id": "401856843",
-          "date": "2026-10-31T19:30Z",
-          "home": true,
-          "opponent": "Arizona State Sun Devils",
-          "opponentAbbr": "ASU",
-          "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/9.png",
-          "state": "final",
-          "result": "W"
         }
       ],
       "upcoming": [
-        {
-          "id": "401856866",
-          "date": "2026-11-21T17:00Z",
-          "home": false,
-          "opponent": "Kansas Jayhawks",
-          "opponentAbbr": "KU",
-          "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2305.png",
-          "state": "live",
-          "period": "Q3",
-          "tv": [
-            "ABC"
-          ],
-          "worthWatching": true
-        },
         {
           "id": "401856876",
           "date": "2026-11-28T20:30Z",
@@ -391,5 +377,5 @@
       ]
     }
   ],
-  "updated": "2026-11-21T19:00Z"
+  "updated": "2026-11-21T23:45Z"
 }
