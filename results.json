@@ -291,10 +291,12 @@
           "opponent": "Kansas Jayhawks",
           "opponentAbbr": "KU",
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2305.png",
-          "state": "upcoming",
+          "state": "live",
+          "period": "Q3",
           "tv": [
             "ABC"
-          ]
+          ],
+          "worthWatching": true
         },
         {
           "id": "401856876",
@@ -389,5 +391,5 @@
       ]
     }
   ],
-  "updated": "2026-11-21T11:59Z"
+  "updated": "2026-11-21T19:00Z"
 }
