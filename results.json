@@ -9,6 +9,16 @@
       "color": "#4e008e",
       "recent": [
         {
+          "id": "401909311",
+          "date": "2026-11-21T02:30Z",
+          "home": true,
+          "opponent": "Phoenix Suns",
+          "opponentAbbr": "PHX",
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/phx.png",
+          "state": "final",
+          "result": "L"
+        },
+        {
           "id": "401910017",
           "date": "2026-11-19T03:00Z",
           "home": false,
@@ -27,34 +37,9 @@
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/lac.png",
           "state": "final",
           "result": "W"
-        },
-        {
-          "id": "401909988",
-          "date": "2026-11-15T22:00Z",
-          "home": true,
-          "opponent": "San Antonio Spurs",
-          "opponentAbbr": "SA",
-          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/sa.png",
-          "state": "final",
-          "result": "L"
         }
       ],
       "upcoming": [
-        {
-          "id": "401909311",
-          "date": "2026-11-21T02:30Z",
-          "home": true,
-          "opponent": "Phoenix Suns",
-          "opponentAbbr": "PHX",
-          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/phx.png",
-          "state": "live",
-          "period": "Q2",
-          "tv": [
-            "KJZZ-TV",
-            "Jazz+"
-          ],
-          "worthWatching": false
-        },
         {
           "id": "401910033",
           "date": "2026-11-23T00:00Z",
@@ -78,6 +63,19 @@
           "state": "upcoming",
           "tv": [
             "NBA TV",
+            "KJZZ-TV",
+            "Jazz+"
+          ]
+        },
+        {
+          "id": "401909334",
+          "date": "2026-11-28T02:30Z",
+          "home": true,
+          "opponent": "Denver Nuggets",
+          "opponentAbbr": "DEN",
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/den.png",
+          "state": "upcoming",
+          "tv": [
             "KJZZ-TV",
             "Jazz+"
           ]
@@ -391,5 +389,5 @@
       ]
     }
   ],
-  "updated": "2026-11-21T03:55Z"
+  "updated": "2026-11-21T11:59Z"
 }
