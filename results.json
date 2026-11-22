@@ -169,6 +169,16 @@
       "color": "#000000",
       "recent": [
         {
+          "id": "401892765",
+          "date": "2026-11-22T02:00Z",
+          "home": true,
+          "opponent": "Anaheim Ducks",
+          "opponentAbbr": "ANA",
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/ana.png",
+          "state": "final",
+          "result": "W"
+        },
+        {
           "id": "401892741",
           "date": "2026-11-19T03:00Z",
           "home": true,
@@ -187,35 +197,9 @@
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/van.png",
           "state": "final",
           "result": "L"
-        },
-        {
-          "id": "401892718",
-          "date": "2026-11-15T02:00Z",
-          "home": true,
-          "opponent": "San Jose Sharks",
-          "opponentAbbr": "SJ",
-          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/sj.png",
-          "state": "final",
-          "result": "OTL"
         }
       ],
       "upcoming": [
-        {
-          "id": "401892765",
-          "date": "2026-11-22T02:00Z",
-          "home": true,
-          "opponent": "Anaheim Ducks",
-          "opponentAbbr": "ANA",
-          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/ana.png",
-          "state": "live",
-          "period": "P2",
-          "tv": [
-            "ESPN+",
-            "Utah 16",
-            "Mammoth+"
-          ],
-          "worthWatching": true
-        },
         {
           "id": "401892777",
           "date": "2026-11-24T00:30Z",
@@ -237,6 +221,20 @@
           "opponent": "Minnesota Wild",
           "opponentAbbr": "MIN",
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/min.png",
+          "state": "upcoming",
+          "tv": [
+            "ESPN+",
+            "Utah 16",
+            "Mammoth+"
+          ]
+        },
+        {
+          "id": "401892797",
+          "date": "2026-11-27T18:00Z",
+          "home": false,
+          "opponent": "Nashville Predators",
+          "opponentAbbr": "NSH",
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/nsh.png",
           "state": "upcoming",
           "tv": [
             "ESPN+",
@@ -379,5 +377,5 @@
       ]
     }
   ],
-  "updated": "2026-11-22T03:31Z"
+  "updated": "2026-11-22T11:56Z"
 }
