@@ -207,12 +207,14 @@
           "opponent": "Anaheim Ducks",
           "opponentAbbr": "ANA",
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/ana.png",
-          "state": "upcoming",
+          "state": "live",
+          "period": "P2",
           "tv": [
             "ESPN+",
             "Utah 16",
             "Mammoth+"
-          ]
+          ],
+          "worthWatching": true
         },
         {
           "id": "401892777",
@@ -377,5 +379,5 @@
       ]
     }
   ],
-  "updated": "2026-11-21T23:45Z"
+  "updated": "2026-11-22T03:31Z"
 }
