@@ -129,10 +129,12 @@
           "opponent": "Miami Dolphins",
           "opponentAbbr": "MIA",
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/mia.png",
-          "state": "upcoming",
+          "state": "live",
+          "period": "Q2",
           "tv": [
             "CBS"
-          ]
+          ],
+          "worthWatching": true
         },
         {
           "id": "401873082",
@@ -377,5 +379,5 @@
       ]
     }
   ],
-  "updated": "2026-11-22T11:56Z"
+  "updated": "2026-11-22T19:03Z"
 }
