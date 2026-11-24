@@ -302,6 +302,16 @@
       "color": "#0047ba",
       "recent": [
         {
+          "id": "401921709",
+          "date": "2026-11-24T19:30Z",
+          "home": true,
+          "opponent": "Ole Miss Rebels",
+          "opponentAbbr": "MISS",
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/145.png",
+          "state": "final",
+          "result": "L"
+        },
+        {
           "id": "401921708",
           "date": "2026-11-23T22:00Z",
           "home": true,
@@ -320,26 +330,16 @@
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2458.png",
           "state": "final",
           "result": "W"
-        },
-        {
-          "id": "401921741",
-          "date": "2026-11-13T02:00Z",
-          "home": true,
-          "opponent": "Montana State Bobcats",
-          "opponentAbbr": "MTST",
-          "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/147.png",
-          "state": "final",
-          "result": "W"
         }
       ],
       "upcoming": [
         {
-          "id": "401921709",
-          "date": "2026-11-24T19:30Z",
-          "home": true,
-          "opponent": "Ole Miss Rebels",
-          "opponentAbbr": "MISS",
-          "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/145.png",
+          "id": "401921716",
+          "date": "2026-11-25T22:30Z",
+          "home": false,
+          "opponent": "TBD",
+          "opponentAbbr": "TBD",
+          "opponentLogo": null,
           "state": "upcoming",
           "tv": [
             "ESPN2"
@@ -372,5 +372,5 @@
       ]
     }
   ],
-  "updated": "2026-11-24T15:04Z"
+  "updated": "2026-11-24T23:51Z"
 }
