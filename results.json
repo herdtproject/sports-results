@@ -9,6 +9,16 @@
       "color": "#4e008e",
       "recent": [
         {
+          "id": "401910044",
+          "date": "2026-11-24T03:00Z",
+          "home": false,
+          "opponent": "Los Angeles Lakers",
+          "opponentAbbr": "LAL",
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/lal.png",
+          "state": "final",
+          "result": "L"
+        },
+        {
           "id": "401910033",
           "date": "2026-11-23T00:00Z",
           "home": true,
@@ -27,35 +37,9 @@
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/phx.png",
           "state": "final",
           "result": "L"
-        },
-        {
-          "id": "401910017",
-          "date": "2026-11-19T03:00Z",
-          "home": false,
-          "opponent": "Los Angeles Lakers",
-          "opponentAbbr": "LAL",
-          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/lal.png",
-          "state": "final",
-          "result": "W"
         }
       ],
       "upcoming": [
-        {
-          "id": "401910044",
-          "date": "2026-11-24T03:00Z",
-          "home": false,
-          "opponent": "Los Angeles Lakers",
-          "opponentAbbr": "LAL",
-          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/lal.png",
-          "state": "live",
-          "period": "Q2",
-          "tv": [
-            "NBA TV",
-            "KJZZ-TV",
-            "Jazz+"
-          ],
-          "worthWatching": false
-        },
         {
           "id": "401909334",
           "date": "2026-11-28T02:30Z",
@@ -81,6 +65,15 @@
             "KJZZ-TV",
             "Jazz+"
           ]
+        },
+        {
+          "id": "401910075",
+          "date": "2026-12-02T03:00Z",
+          "home": false,
+          "opponent": "Golden State Warriors",
+          "opponentAbbr": "GS",
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/gs.png",
+          "state": "upcoming"
         }
       ]
     },
@@ -379,5 +372,5 @@
       ]
     }
   ],
-  "updated": "2026-11-24T04:25Z"
+  "updated": "2026-11-24T15:04Z"
 }
