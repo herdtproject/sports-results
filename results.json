@@ -47,12 +47,14 @@
           "opponent": "Los Angeles Lakers",
           "opponentAbbr": "LAL",
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/nba/500/lal.png",
-          "state": "upcoming",
+          "state": "live",
+          "period": "Q2",
           "tv": [
             "NBA TV",
             "KJZZ-TV",
             "Jazz+"
-          ]
+          ],
+          "worthWatching": false
         },
         {
           "id": "401909334",
@@ -169,6 +171,16 @@
       "color": "#000000",
       "recent": [
         {
+          "id": "401892777",
+          "date": "2026-11-24T00:30Z",
+          "home": false,
+          "opponent": "Winnipeg Jets",
+          "opponentAbbr": "WPG",
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/wpg.png",
+          "state": "final",
+          "result": "L"
+        },
+        {
           "id": "401892765",
           "date": "2026-11-22T02:00Z",
           "home": true,
@@ -187,33 +199,9 @@
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/col.png",
           "state": "final",
           "result": "W"
-        },
-        {
-          "id": "401892727",
-          "date": "2026-11-17T02:30Z",
-          "home": true,
-          "opponent": "Vancouver Canucks",
-          "opponentAbbr": "VAN",
-          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/van.png",
-          "state": "final",
-          "result": "L"
         }
       ],
       "upcoming": [
-        {
-          "id": "401892777",
-          "date": "2026-11-24T00:30Z",
-          "home": false,
-          "opponent": "Winnipeg Jets",
-          "opponentAbbr": "WPG",
-          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/wpg.png",
-          "state": "upcoming",
-          "tv": [
-            "ESPN+",
-            "Utah 16",
-            "Mammoth+"
-          ]
-        },
         {
           "id": "401892791",
           "date": "2026-11-26T01:00Z",
@@ -235,6 +223,20 @@
           "opponent": "Nashville Predators",
           "opponentAbbr": "NSH",
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/nsh.png",
+          "state": "upcoming",
+          "tv": [
+            "ESPN+",
+            "Utah 16",
+            "Mammoth+"
+          ]
+        },
+        {
+          "id": "401892819",
+          "date": "2026-11-29T01:00Z",
+          "home": false,
+          "opponent": "Dallas Stars",
+          "opponentAbbr": "DAL",
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/dal.png",
           "state": "upcoming",
           "tv": [
             "ESPN+",
@@ -307,6 +309,16 @@
       "color": "#0047ba",
       "recent": [
         {
+          "id": "401921708",
+          "date": "2026-11-23T22:00Z",
+          "home": true,
+          "opponent": "Washington Huskies",
+          "opponentAbbr": "WASH",
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/264.png",
+          "state": "final",
+          "result": "W"
+        },
+        {
           "id": "401921742",
           "date": "2026-11-19T02:00Z",
           "home": true,
@@ -325,26 +337,16 @@
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/147.png",
           "state": "final",
           "result": "W"
-        },
-        {
-          "id": "401921740",
-          "date": "2026-11-11T02:00Z",
-          "home": true,
-          "opponent": "Queens University Royals",
-          "opponentAbbr": "QUC",
-          "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2511.png",
-          "state": "final",
-          "result": "W"
         }
       ],
       "upcoming": [
         {
-          "id": "401921708",
-          "date": "2026-11-23T22:00Z",
+          "id": "401921709",
+          "date": "2026-11-24T19:30Z",
           "home": true,
-          "opponent": "Washington Huskies",
-          "opponentAbbr": "WASH",
-          "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/264.png",
+          "opponent": "Ole Miss Rebels",
+          "opponentAbbr": "MISS",
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/145.png",
           "state": "upcoming",
           "tv": [
             "ESPN2"
@@ -377,5 +379,5 @@
       ]
     }
   ],
-  "updated": "2026-11-23T07:46Z"
+  "updated": "2026-11-24T04:25Z"
 }
