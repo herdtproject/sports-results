@@ -32,20 +32,6 @@
      "status": "playin",
      "rank": 10
     },
-    "2": {
-     "id": "2",
-     "name": "Celtics",
-     "abbr": "BOS",
-     "logo": "https://a.espncdn.com/i/teamlogos/nba/500/bos.png",
-     "record": "11-6",
-     "main": ".647",
-     "mainLabel": "PCT",
-     "streak": "L4",
-     "seed": 3,
-     "mine": false,
-     "status": "in",
-     "rank": 3
-    },
     "18": {
      "id": "18",
      "name": "Knicks",
@@ -55,10 +41,24 @@
      "main": ".647",
      "mainLabel": "PCT",
      "streak": "W5",
-     "seed": 4,
+     "seed": 5,
      "mine": false,
      "status": "in",
-     "rank": 4
+     "rank": 5
+    },
+    "2": {
+     "id": "2",
+     "name": "Celtics",
+     "abbr": "BOS",
+     "logo": "https://a.espncdn.com/i/teamlogos/nba/500/bos.png",
+     "record": "12-6",
+     "main": ".667",
+     "mainLabel": "PCT",
+     "streak": "W1",
+     "seed": 2,
+     "mine": false,
+     "status": "in",
+     "rank": 2
     },
     "20": {
      "id": "20",
@@ -135,14 +135,14 @@
      "name": "Pistons",
      "abbr": "DET",
      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/det.png",
-     "record": "10-6",
-     "main": ".625",
+     "record": "11-6",
+     "main": ".647",
      "mainLabel": "PCT",
-     "streak": "L2",
-     "seed": 5,
+     "streak": "W1",
+     "seed": 4,
      "mine": false,
      "status": "in",
-     "rank": 5
+     "rank": 4
     },
     "30": {
      "id": "30",
@@ -163,10 +163,10 @@
      "name": "Wizards",
      "abbr": "WSH",
      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/wsh.png",
-     "record": "7-11",
-     "main": ".389",
+     "record": "7-12",
+     "main": ".368",
      "mainLabel": "PCT",
-     "streak": "W3",
+     "streak": "L1",
      "seed": 9,
      "mine": false,
      "status": "playin",
@@ -177,10 +177,10 @@
      "name": "Magic",
      "abbr": "ORL",
      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/orl.png",
-     "record": "7-9",
-     "main": ".438",
+     "record": "7-10",
+     "main": ".412",
      "mainLabel": "PCT",
-     "streak": "L1",
+     "streak": "L2",
      "seed": 8,
      "mine": false,
      "status": "playin",
@@ -209,10 +209,10 @@
      "main": ".647",
      "mainLabel": "PCT",
      "streak": "W4",
-     "seed": 2,
+     "seed": 3,
      "mine": false,
      "status": "in",
-     "rank": 2
+     "rank": 3
     },
     "26": {
      "id": "26",
@@ -247,14 +247,14 @@
      "name": "Nuggets",
      "abbr": "DEN",
      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/den.png",
-     "record": "10-5",
-     "main": ".667",
+     "record": "10-6",
+     "main": ".625",
      "mainLabel": "PCT",
-     "streak": "W3",
-     "seed": 6,
+     "streak": "L1",
+     "seed": 7,
      "mine": false,
-     "status": "in",
-     "rank": 6
+     "status": "playin",
+     "rank": 7
     },
     "22": {
      "id": "22",
@@ -265,10 +265,10 @@
      "main": ".647",
      "mainLabel": "PCT",
      "streak": "W1",
-     "seed": 7,
+     "seed": 6,
      "mine": false,
-     "status": "playin",
-     "rank": 7
+     "status": "in",
+     "rank": 6
     },
     "16": {
      "id": "16",
@@ -373,10 +373,10 @@
      "name": "Mavericks",
      "abbr": "DAL",
      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/dal.png",
-     "record": "10-7",
-     "main": ".588",
+     "record": "11-7",
+     "main": ".611",
      "mainLabel": "PCT",
-     "streak": "W3",
+     "streak": "W4",
      "seed": 8,
      "mine": false,
      "status": "playin",
@@ -462,10 +462,10 @@
      ],
      "order": [
       "20",
-      "1",
       "2",
-      "18",
+      "1",
       "8",
+      "18",
       "14",
       "5",
       "19",
@@ -489,8 +489,8 @@
        "name": "Northwest",
        "ids": [
         "16",
-        "7",
         "22",
+        "7",
         "25",
         "26"
        ]
@@ -522,8 +522,8 @@
       "16",
       "10",
       "29",
-      "7",
       "22",
+      "7",
       "6",
       "21",
       "25",
@@ -885,10 +885,10 @@
      "name": "Oilers",
      "abbr": "EDM",
      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/edm.png",
-     "record": "17-5-4",
+     "record": "17-6-4",
      "main": "38",
      "mainLabel": "PTS",
-     "streak": "L3",
+     "streak": "L4",
      "seed": 2,
      "mine": false,
      "status": "div",
@@ -899,10 +899,10 @@
      "name": "Golden Knights",
      "abbr": "VGK",
      "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/vgk.png",
-     "record": "14-6-5",
-     "main": "33",
+     "record": "15-6-5",
+     "main": "35",
      "mainLabel": "PTS",
-     "streak": "W1",
+     "streak": "W2",
      "seed": 3,
      "mine": false,
      "status": "div",
@@ -1681,5 +1681,5 @@
    ]
   }
  ],
- "updated": "2026-11-24T15:04Z"
+ "updated": "2026-11-25T06:33Z"
 }

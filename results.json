@@ -337,9 +337,9 @@
           "id": "401921716",
           "date": "2026-11-25T22:30Z",
           "home": false,
-          "opponent": "TBD",
-          "opponentAbbr": "TBD",
-          "opponentLogo": null,
+          "opponent": "Providence Friars",
+          "opponentAbbr": "PROV",
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2507.png",
           "state": "upcoming",
           "tv": [
             "ESPN2"
@@ -372,5 +372,5 @@
       ]
     }
   ],
-  "updated": "2026-11-24T23:51Z"
+  "updated": "2026-11-25T06:33Z"
 }
