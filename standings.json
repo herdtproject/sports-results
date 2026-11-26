@@ -65,10 +65,10 @@
      "name": "76ers",
      "abbr": "PHI",
      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/phi.png",
-     "record": "14-4",
-     "main": ".778",
+     "record": "15-4",
+     "main": ".789",
      "mainLabel": "PCT",
-     "streak": "L1",
+     "streak": "W1",
      "seed": 1,
      "mine": false,
      "status": "in",
@@ -191,10 +191,10 @@
      "name": "Heat",
      "abbr": "MIA",
      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/mia.png",
-     "record": "10-6",
-     "main": ".625",
+     "record": "10-7",
+     "main": ".588",
      "mainLabel": "PCT",
-     "streak": "W7",
+     "streak": "L1",
      "seed": 6,
      "mine": false,
      "status": "in",
@@ -1681,5 +1681,5 @@
    ]
   }
  ],
- "updated": "2026-11-25T06:33Z"
+ "updated": "2026-11-26T01:08Z"
 }

@@ -302,6 +302,16 @@
       "color": "#0047ba",
       "recent": [
         {
+          "id": "401921716",
+          "date": "2026-11-25T22:30Z",
+          "home": false,
+          "opponent": "Providence Friars",
+          "opponentAbbr": "PROV",
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2507.png",
+          "state": "final",
+          "result": "W"
+        },
+        {
           "id": "401921709",
           "date": "2026-11-24T19:30Z",
           "home": true,
@@ -320,31 +330,9 @@
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/264.png",
           "state": "final",
           "result": "W"
-        },
-        {
-          "id": "401921742",
-          "date": "2026-11-19T02:00Z",
-          "home": true,
-          "opponent": "Northern Colorado Bears",
-          "opponentAbbr": "UNCO",
-          "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2458.png",
-          "state": "final",
-          "result": "W"
         }
       ],
       "upcoming": [
-        {
-          "id": "401921716",
-          "date": "2026-11-25T22:30Z",
-          "home": false,
-          "opponent": "Providence Friars",
-          "opponentAbbr": "PROV",
-          "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2507.png",
-          "state": "upcoming",
-          "tv": [
-            "ESPN2"
-          ]
-        },
         {
           "id": "401920738",
           "date": "2026-12-05T21:00Z",
@@ -368,9 +356,21 @@
           "tv": [
             "FS1"
           ]
+        },
+        {
+          "id": "401920162",
+          "date": "2026-12-12T21:30Z",
+          "home": true,
+          "opponent": "Cal State Fullerton Titans",
+          "opponentAbbr": "CSUF",
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2239.png",
+          "state": "upcoming",
+          "tv": [
+            "CBSSN"
+          ]
         }
       ]
     }
   ],
-  "updated": "2026-11-25T06:33Z"
+  "updated": "2026-11-26T01:08Z"
 }
