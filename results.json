@@ -164,6 +164,16 @@
       "color": "#000000",
       "recent": [
         {
+          "id": "401892791",
+          "date": "2026-11-26T01:00Z",
+          "home": false,
+          "opponent": "Minnesota Wild",
+          "opponentAbbr": "MIN",
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/min.png",
+          "state": "final",
+          "result": "W"
+        },
+        {
           "id": "401892777",
           "date": "2026-11-24T00:30Z",
           "home": false,
@@ -182,33 +192,9 @@
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/ana.png",
           "state": "final",
           "result": "W"
-        },
-        {
-          "id": "401892741",
-          "date": "2026-11-19T03:00Z",
-          "home": true,
-          "opponent": "Colorado Avalanche",
-          "opponentAbbr": "COL",
-          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/col.png",
-          "state": "final",
-          "result": "W"
         }
       ],
       "upcoming": [
-        {
-          "id": "401892791",
-          "date": "2026-11-26T01:00Z",
-          "home": false,
-          "opponent": "Minnesota Wild",
-          "opponentAbbr": "MIN",
-          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/min.png",
-          "state": "upcoming",
-          "tv": [
-            "ESPN+",
-            "Utah 16",
-            "Mammoth+"
-          ]
-        },
         {
           "id": "401892797",
           "date": "2026-11-27T18:00Z",
@@ -230,6 +216,20 @@
           "opponent": "Dallas Stars",
           "opponentAbbr": "DAL",
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/dal.png",
+          "state": "upcoming",
+          "tv": [
+            "ESPN+",
+            "Utah 16",
+            "Mammoth+"
+          ]
+        },
+        {
+          "id": "401892830",
+          "date": "2026-12-01T02:30Z",
+          "home": true,
+          "opponent": "Montreal Canadiens",
+          "opponentAbbr": "MTL",
+          "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/mtl.png",
           "state": "upcoming",
           "tv": [
             "ESPN+",
@@ -372,5 +372,5 @@
       ]
     }
   ],
-  "updated": "2026-11-26T01:08Z"
+  "updated": "2026-11-26T09:28Z"
 }
