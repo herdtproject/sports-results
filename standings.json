@@ -1342,20 +1342,6 @@
      "status": "div",
      "rank": 3
     },
-    "6": {
-     "id": "6",
-     "name": "Cowboys",
-     "abbr": "DAL",
-     "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/dal.png",
-     "record": "5-6",
-     "main": ".455",
-     "mainLabel": "PCT",
-     "streak": "W1",
-     "seed": 10,
-     "mine": false,
-     "status": "out",
-     "rank": 10
-    },
     "28": {
      "id": "28",
      "name": "Commanders",
@@ -1365,6 +1351,20 @@
      "main": ".450",
      "mainLabel": "PCT",
      "streak": "W2",
+     "seed": 10,
+     "mine": false,
+     "status": "out",
+     "rank": 10
+    },
+    "6": {
+     "id": "6",
+     "name": "Cowboys",
+     "abbr": "DAL",
+     "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/dal.png",
+     "record": "5-7",
+     "main": ".417",
+     "mainLabel": "PCT",
+     "streak": "L1",
      "seed": 11,
      "mine": false,
      "status": "out",
@@ -1375,22 +1375,22 @@
      "name": "Eagles",
      "abbr": "PHI",
      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/phi.png",
-     "record": "3-7",
-     "main": ".300",
+     "record": "4-7",
+     "main": ".364",
      "mainLabel": "PCT",
-     "streak": "W1",
-     "seed": 15,
+     "streak": "W2",
+     "seed": 12,
      "mine": false,
      "status": "out",
-     "rank": 15
+     "rank": 12
     },
-    "8": {
-     "id": "8",
-     "name": "Lions",
-     "abbr": "DET",
-     "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/det.png",
-     "record": "8-2",
-     "main": ".800",
+    "3": {
+     "id": "3",
+     "name": "Bears",
+     "abbr": "CHI",
+     "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/chi.png",
+     "record": "9-2",
+     "main": ".818",
      "mainLabel": "PCT",
      "streak": "W6",
      "seed": 2,
@@ -1398,15 +1398,15 @@
      "status": "div",
      "rank": 2
     },
-    "3": {
-     "id": "3",
-     "name": "Bears",
-     "abbr": "CHI",
-     "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/chi.png",
-     "record": "8-2",
-     "main": ".800",
+    "8": {
+     "id": "8",
+     "name": "Lions",
+     "abbr": "DET",
+     "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/det.png",
+     "record": "8-3",
+     "main": ".727",
      "mainLabel": "PCT",
-     "streak": "W5",
+     "streak": "L1",
      "seed": 5,
      "mine": false,
      "status": "wc",
@@ -1463,10 +1463,10 @@
      "main": ".300",
      "mainLabel": "PCT",
      "streak": "L2",
-     "seed": 12,
+     "seed": 13,
      "mine": false,
      "status": "out",
-     "rank": 12
+     "rank": 13
     },
     "1": {
      "id": "1",
@@ -1477,10 +1477,10 @@
      "main": ".300",
      "mainLabel": "PCT",
      "streak": "L3",
-     "seed": 13,
+     "seed": 14,
      "mine": false,
      "status": "out",
-     "rank": 13
+     "rank": 14
     },
     "18": {
      "id": "18",
@@ -1491,10 +1491,10 @@
      "main": ".300",
      "mainLabel": "PCT",
      "streak": "L2",
-     "seed": 14,
+     "seed": 15,
      "mine": false,
      "status": "out",
-     "rank": 14
+     "rank": 15
     },
     "25": {
      "id": "25",
@@ -1623,16 +1623,16 @@
        "name": "East",
        "ids": [
         "19",
-        "6",
         "28",
+        "6",
         "21"
        ]
       },
       {
        "name": "North",
        "ids": [
-        "8",
         "3",
+        "8",
         "16",
         "9"
        ]
@@ -1658,20 +1658,20 @@
      ],
      "order": [
       "25",
-      "8",
+      "3",
       "19",
       "29",
-      "3",
+      "8",
       "16",
       "14",
       "26",
       "9",
-      "6",
       "28",
+      "6",
+      "21",
       "27",
       "1",
       "18",
-      "21",
       "22"
      ],
      "cuts": [
@@ -1681,5 +1681,5 @@
    ]
   }
  ],
- "updated": "2026-11-26T09:28Z"
+ "updated": "2026-11-27T02:14Z"
 }

@@ -124,10 +124,12 @@
           "opponent": "Kansas City Chiefs",
           "opponentAbbr": "KC",
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/kc.png",
-          "state": "upcoming",
+          "state": "live",
+          "period": "Q2",
           "tv": [
             "NBC"
-          ]
+          ],
+          "worthWatching": true
         },
         {
           "id": "401873105",
@@ -372,5 +374,5 @@
       ]
     }
   ],
-  "updated": "2026-11-26T09:28Z"
+  "updated": "2026-11-27T02:14Z"
 }
