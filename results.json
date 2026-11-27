@@ -202,12 +202,14 @@
           "opponent": "Nashville Predators",
           "opponentAbbr": "NSH",
           "opponentLogo": "https://a.espncdn.com/i/teamlogos/nhl/500/nsh.png",
-          "state": "upcoming",
+          "state": "live",
+          "period": "P2",
           "tv": [
             "ESPN+",
             "Utah 16",
             "Mammoth+"
-          ]
+          ],
+          "worthWatching": true
         },
         {
           "id": "401892819",
@@ -372,5 +374,5 @@
       ]
     }
   ],
-  "updated": "2026-11-27T10:56Z"
+  "updated": "2026-11-27T19:47Z"
 }
