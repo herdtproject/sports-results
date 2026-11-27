@@ -1109,10 +1109,10 @@
      "name": "Bills",
      "abbr": "BUF",
      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/buf.png",
-     "record": "9-1",
-     "main": ".900",
+     "record": "10-1",
+     "main": ".909",
      "mainLabel": "PCT",
-     "streak": "W6",
+     "streak": "W7",
      "seed": 1,
      "mine": true,
      "status": "div",
@@ -1291,10 +1291,10 @@
      "name": "Chiefs",
      "abbr": "KC",
      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/kc.png",
-     "record": "8-2",
-     "main": ".800",
+     "record": "8-3",
+     "main": ".727",
      "mainLabel": "PCT",
-     "streak": "W3",
+     "streak": "L1",
      "seed": 5,
      "mine": false,
      "status": "wc",
@@ -1681,5 +1681,5 @@
    ]
   }
  ],
- "updated": "2026-11-27T02:14Z"
+ "updated": "2026-11-27T10:56Z"
 }
